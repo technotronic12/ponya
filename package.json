@@ -16,7 +16,7 @@
     "mobx",
     "starter-kit"
   ],
-  "author": "Michel Weststrate <mweststrate@gmail.com> (http://github.com/mweststrate)",
+  "author": "Eli Ponyatvoski <eliponyatovski@hotmail.com> (http://github.com/technotronic12)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mobxjs/mobx/issues"
@@ -26,6 +26,12 @@
     "@types/react": "^15.0.39",
     "@types/react-dom": "^15.5.1",
     "awesome-typescript-loader": "^3.2.1",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2016": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "style-loader": "^0.18.2",
+    "typed-css-modules": "^0.3.0",
+    "typed-css-modules-loader": "^0.0.11",
     "typescript": "^2.4.2",
     "webpack": "^3.0.0",
     "webpack-dev-server": "^2.6.1"
