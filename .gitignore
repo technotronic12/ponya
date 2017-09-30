@@ -4,3 +4,4 @@ static/bundle.js
 .idea
 .awcache
 assets/psd/
+yarn-error.log
