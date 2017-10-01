@@ -1,27 +1,26 @@
 {
-  "name": "mobx-react-typescript-boilerplate",
+  "name": "ponya",
   "version": "1.0.0",
-  "description": "Boilerplate for MobX + React project with Typescript, ES6 compilation and hot code reloading",
+  "description": "Ponya.space - Eli's travel trough space",
   "scripts": {
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mobxjs/mobx-react-typescript-boilerplate.git"
+    "url": "https://github.com/technotronic12/ponya.git"
   },
   "keywords": [
     "react",
     "reactjs",
-    "boilerplate",
     "mobx",
-    "starter-kit"
+    "eli"
   ],
   "author": "Eli Ponyatvoski <eliponyatovski@hotmail.com> (http://github.com/technotronic12)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mobxjs/mobx/issues"
+    "url": "https://github.com/technotronic12/ponya"
   },
-  "homepage": "http://mobxjs.github.com/mobx",
+  "homepage": "http://ponya.space",
   "devDependencies": {
     "@types/react": "^15.0.39",
     "@types/react-dom": "^15.5.1",
