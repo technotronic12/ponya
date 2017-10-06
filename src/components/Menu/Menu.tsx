@@ -11,7 +11,7 @@ export class Menu extends React.Component<{ store: MenuState }, {}> {
         return (
             <div className={style.menu}>
                 <Logo/>
-                <div className="menu-buttons">
+                <div className={style.menuButtons}>
                     { this.props.store.getItems().map(item => <MenuButton value={item} />) }
                 </div>
             </div>

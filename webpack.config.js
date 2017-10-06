@@ -1,5 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
+
+const { dashedCssClassName } = require('css-loader-dashed-class-names');
 const { CheckerPlugin } = require('awesome-typescript-loader');
 
 module.exports = {
@@ -33,7 +35,9 @@ module.exports = {
                         options: {
                             modules: true,
                             importLoaders: 1,
-                            camelCase: true
+                            camelCase: true,
+                            localIdentName: '[name]-[local]',
+                            getLocalIdent: dashedCssClassName
                         }
                     },
                     {

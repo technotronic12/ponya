@@ -1,0 +1,15 @@
+.logo {
+    /*width: 300px;*/
+    height: 100%;
+    float: left;
+}
+
+.logo-top-text {
+    width: 100%;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.logo-bottom-text {
+    font-size: 1.5em;
+}
