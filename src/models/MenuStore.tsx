@@ -1,7 +1,8 @@
 import { observable, action } from 'mobx';
+import { MenuItem } from './MenuItem';
 
 export class MenuStore {
-    @observable menuItems = [];
+    @observable menuItems: MenuItem[] = [];
     @observable selectedMenuItem = {};
 
     @action setItems = items => this.menuItems = items;
