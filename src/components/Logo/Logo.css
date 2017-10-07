@@ -1,13 +1,13 @@
 .logo {
     padding: 14px 42px;
-    height: 100%;
     float: left;
+    line-height: 72px;
 }
 
 .logo-top-text {
     width: 100%;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.4em;
 }
 
 .logo-bottom-text {
