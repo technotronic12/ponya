@@ -1,8 +1,8 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { MenuState } from './models/MenuState';
+import { MenuStore } from './models/MenuState';
 import { App } from './components/App/App';
 
-const menuState =  new MenuState(['Home', 'About']);
+const menuState =  new MenuStore(['About', 'Home']);
 
 ReactDOM.render(<App menuState={menuState}/>, document.getElementById('root'));

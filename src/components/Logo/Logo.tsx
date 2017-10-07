@@ -7,7 +7,7 @@ export class Logo extends React.Component {
     render() {
         return (
             <div className={style.logo}>
-                <div className={style.logoTopText}>Ponya.space</div>
+                <div className={style.logoTopText}>PONYA.SPACE</div>
                 <div className={style.logoBottomText}>Something</div>
             </div>
         );

@@ -1,6 +1,6 @@
 import { observable, action } from 'mobx';
 
-export class MenuState {
+export class MenuStore {
     @observable menuItems = [];
     @observable selectedMenuItem = {};
 

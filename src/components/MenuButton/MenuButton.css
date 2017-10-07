@@ -1,6 +1,5 @@
 .menu-button {
-    float: left;
+    float: right;
     width: 100px;
-    color: cyan;
     line-height: 100px;
 }

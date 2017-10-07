@@ -1,17 +1,19 @@
 import * as React from 'react';
 import { observer } from 'mobx-react';
-import { backgroud } from './App.css';
+import { background, container } from './App.css';
 import { Menu } from '../Menu/Menu';
-import { MenuState } from '../../models/MenuState';
+import { MenuStore } from '../../models/MenuState';
 import DevTools from 'mobx-react-devtools';
 
 
 @observer
-export class App extends React.Component<{ menuState: MenuState }, {}> {
+export class App extends React.Component<{ menuState: MenuStore }, {}> {
     render() {
         return (
-            <div className={backgroud}>
-                <Menu store={this.props.menuState}/>
+            <div className={background}>
+                <div className={container}>
+                    <Menu menuStore={this.props.menuState}/>
+                </div>
                 <DevTools />
             </div>
         );
