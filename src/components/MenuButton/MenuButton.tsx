@@ -3,11 +3,16 @@ import { observer } from 'mobx-react';
 import * as style from './MenuButton.css'
 
 @observer
-export class MenuButton extends React.Component<{ value: String }, {}> {
+export class MenuButton extends React.Component<{ item, onClick }, {}> {
+
+    selectItem() {
+        this.props.onClick(this.props.item);
+    }
+
     render() {
         return (
-            <div className={style.menuButton}>
-                { this.props.value }
+            <div className={style.menuButton} onClick={this.selectItem.bind(this)}>
+                { this.props.item.text }
             </div>
         );
     }
