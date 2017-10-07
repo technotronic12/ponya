@@ -5,3 +5,4 @@ static/bundle.js
 .awcache
 assets/psd/
 yarn-error.log
+.DS_Store

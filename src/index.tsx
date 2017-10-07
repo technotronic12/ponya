@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { MenuStore } from './models/MenuState';
+import { MenuStore } from './models/MenuStore';
 import { App } from './components/App/App';
 
 const menuState =  new MenuStore(['About', 'Home']);
