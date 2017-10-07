@@ -12,7 +12,11 @@ export class Menu extends React.Component<{ menuStore: MenuStore }, {}> {
             <div className={style.menu}>
                 <Logo/>
                 <div className={style.menuButtons}>
-                    { this.props.menuStore.getItems().sort((b,a) => a.index -  b.index).map(item => <MenuButton key={item.text} value={item.text} />) }
+                    {
+                        this.props.menuStore.getItems()
+                        .sort((b,a) => a.index -  b.index)
+                        .map(item => <MenuButton key={item.text} value={item.text} />)
+                    }
                 </div>
             </div>
         );

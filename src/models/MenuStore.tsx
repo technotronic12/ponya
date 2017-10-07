@@ -1,5 +1,5 @@
 import { observable, action } from 'mobx';
-import { MenuItem } from './MenuItem';
+import { MenuItem, menuItems } from './MenuItem';
 
 export class MenuStore {
     @observable menuItems: MenuItem[] = [];
@@ -13,3 +13,6 @@ export class MenuStore {
         this.setItems(items);
     }
 }
+
+const menuStore =  new MenuStore(menuItems);
+export { menuStore };

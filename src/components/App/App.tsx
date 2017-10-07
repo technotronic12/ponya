@@ -7,12 +7,12 @@ import DevTools from 'mobx-react-devtools';
 
 
 @observer
-export class App extends React.Component<{ menuState: MenuStore }, {}> {
+export class App extends React.Component<{ menuStore: MenuStore }, {}> {
     render() {
         return (
             <div className={background}>
                 <div className={container}>
-                    <Menu menuStore={this.props.menuState}/>
+                    <Menu menuStore={this.props.menuStore}/>
                 </div>
                 <DevTools />
             </div>
