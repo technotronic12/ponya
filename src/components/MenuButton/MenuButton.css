@@ -1,5 +1,11 @@
+.menu-button:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
 .menu-button {
     float: right;
     width: 100px;
+    text-align: center;
     line-height: 100px;
 }
