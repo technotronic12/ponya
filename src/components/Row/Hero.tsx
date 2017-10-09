@@ -6,13 +6,12 @@ export class Hero extends React.Component {
     render() {
         return (
             <div>
-                <img className={style.fullWidthBg} src="../../../assets/space.jpg"/>
-                <div className={[style.centerPosition, style.slidein].join(' ')}>
-                    <div className={[style.hello, style.fadein].join(' ')}>Hi, I am Eli. A Fullstack developer.</div>
+                <img className={style.fullWidthBg} src="../../../assets/spaceOne.jpg"/>
+                <div className={[style.centerPosition].join(' ')}>
+                    <div className={[style.hello].join(' ')}>Hi, I am Eli. A Fullstack developer.</div>
                     <div>
-                        <div className={[style.travel, style.fadein].join(' ')}>
-                            Building things, from
-                            <span className={style.strike}> space</span><span id="typed-strings"> home</span>.
+                        <div className={[style.travel].join(' ')}>
+                            Building things, from<span id="typed-strings"> home</span>.
                         </div>
                     </div>
                 </div>
