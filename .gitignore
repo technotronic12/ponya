@@ -7,3 +7,7 @@ assets/psd/
 yarn-error.log
 .DS_Store
 *.css.d.ts
+assets/ponyaSketch.jpg
+assets/space.jpg
+assets/spaceSmall.jpg
+/.idea/vcs.xml
