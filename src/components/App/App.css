@@ -1,16 +1,15 @@
 .background {
-    background-color: #b1c8b8;
-    min-height: 100%;
-    min-width: 1024px;
-    width: 100%;
-    height: auto;
-
-    position: fixed;
-    top: 0;
-    left: 0;
+	min-height: 100%;
+	min-width: 1024px;
+	width: 100%;
+	height: auto;
+	background-color: #00021b;
+	position: fixed;
+	top: 0;
+	left: 0;
 }
 
 .container {
-    max-width: 1024px;
-    margin: 0 auto;
+	max-width: 1024px;
+	margin: 0 auto;
 }
