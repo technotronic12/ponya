@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { App } from './components/App/App';
-import { menuStore } from './models/MenuStore';
+import { appStore } from './models/AppStore';
 
-ReactDOM.render(<App menuStore={menuStore}/>, document.getElementById('root'));
+ReactDOM.render(<App appStore={appStore}/>, document.getElementById('root'));
