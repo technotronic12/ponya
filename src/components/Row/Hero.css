@@ -1,0 +1,98 @@
+.full-width-bg {
+	position: absolute;
+	top: -100px;
+	width: 100%;
+	z-index: -1;
+}
+
+.hello {
+	font-size: 2em;
+	color: white;
+}
+
+.travel {
+	font-size: 1.3em;
+	color: white;
+}
+
+.center-position {
+	width: 100%;
+	position: relative;
+	top: 200px;
+	text-align: center;
+	margin-top: 25px;
+	font-size: 21px;
+}
+
+.slidein {
+	animation-name: slidein;
+	-webkit-animation-name: slidein;
+	animation-duration: 2s;
+	-webkit-animation-duration: 2s;
+	animation-timing-function: ease;
+	-webkit-animation-timing-function: ease;
+	visibility: visible !important;
+}
+
+.fadein {
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 2s; /* Firefox < 16 */
+	-ms-animation: fadein 2s; /* Internet Explorer */
+	-o-animation: fadein 2s; /* Opera < 12.1 */
+	animation: fadein 2s;
+}
+
+
+@keyframes slidein {
+	0% { transform: translateY(-100%); }
+	50% { transform: translateY(8%); }
+	65% { transform: translateY(-4%); }
+	80% { transform: translateY(4%); }
+	95% { transform: translateY(-2%); }
+	100% { transform: translateY(0%); }
+}
+
+@-webkit-keyframes slidein {
+	0% { -webkit-transform: translateY(-100%); }
+	50% { -webkit-transform: translateY(8%); }
+	65% { -webkit-transform: translateY(-4%); }
+	80% { -webkit-transform: translateY(4%); }
+	95% { -webkit-transform: translateY(0%); }
+	100% { -webkit-transform: translateY(0%); }
+}
+
+@keyframes fadein {
+	from { opacity: 0.3; }
+	to { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+	from { opacity: 0.3; }
+	to { opacity: 1; }
+}
+
+@keyframes strike{
+	0%   { width : 0; opacity: 0; }
+	1% {opacity: 1;}
+	100% { width: 100%; opacity: 1; }
+}
+.strike {
+	position: relative;
+}
+.strike:after {
+	content: ' ';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	opacity: 0;
+	width: 100%;
+	height: 2px;
+	background: white;
+	animation-name: strike;
+	animation-delay: 2s;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
