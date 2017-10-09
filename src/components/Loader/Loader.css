@@ -52,6 +52,13 @@
 	animation: spin 1.5s linear infinite;
 }
 
+.fadeout {
+	-webkit-animation: fadeout 1s forwards; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadeout 1s forwards; /* Firefox < 16 */
+	-ms-animation: fadeout 1s forwards; /* Internet Explorer */
+	animation: fadeout 1s forwards;
+}
+
 @-webkit-keyframes spin {
 	0% {
 		-webkit-transform: rotate(0deg); /* Chrome, Opera 15+, Safari 3.1+ */
@@ -78,19 +85,12 @@
 	}
 }
 
-.fadeout {
-	-webkit-animation: fadeout 1s forwards; /* Safari, Chrome and Opera > 12.1 */
-	-moz-animation: fadeout 1s forwards; /* Firefox < 16 */
-	-ms-animation: fadeout 1s forwards; /* Internet Explorer */
-	animation: fadeout 1s forwards;
-}
-
 @keyframes fadeout {
 	from { opacity: 1; }
-	to { opacity: 0; display: none; }
+	to { opacity: 0; visibility: hidden; }
 }
 
 @-webkit-keyframes fadeout {
 	from { opacity: 1; }
-	to { opacity: 0; display: none; }
+	to { opacity: 0; visibility: hidden; }
 }
