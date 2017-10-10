@@ -1,13 +1,11 @@
-var path = require('path');
-var webpack = require('webpack');
-
+const path = require('path');
+const webpack = require('webpack');
 const { dashedCssClassName } = require('css-loader-dashed-class-names');
 const { CheckerPlugin } = require('awesome-typescript-loader');
 
 module.exports = {
     devtool: 'eval',
     entry: [
-        'webpack-dev-server/client?http://localhost:3000',
         './src/index'
     ],
     output: {

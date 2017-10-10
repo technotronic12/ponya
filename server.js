@@ -1,15 +1,37 @@
-var webpack = require('webpack');
-var WebpackDevServer = require('webpack-dev-server');
-var config = require('./webpack.config');
+const path = require('path');
+const express = require('express');
+const webpack = require('webpack');
+const config = require('./webpack.config.js');
+const webpackMiddleware = require('webpack-dev-middleware');
+const compiler = webpack(config);
 
-new WebpackDevServer(webpack(config), {
-  publicPath: config.output.publicPath,
-  hot: false,
-  historyApiFallback: true
-}).listen(3000, 'localhost', function (err, result) {
-  if (err) {
-    console.log(err);
-  }
+const app = express();
+const port = 3000 || process.env.port;
 
-  console.log('Listening at localhost:3000');
+app.use(express.static(path.join(__dirname, "/")));
+
+app.use(webpackMiddleware(compiler, {
+    noInfo: false,
+    quiet: false,
+    lazy: true,
+    watchOptions: {
+        aggregateTimeout: 300,
+        poll: true
+    },
+    publicPath: "/static/",
+    index: "index.html",
+    headers: { "X-Custom-Header": "yes" },
+    stats: {
+        colors: true
+    },
+    reporter: null,
+    serverSideRender: false,
+}));
+
+app.listen(port, function () {
+    console.log("Started listening on port", port);
+});
+
+app.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname, '/static/index.html'));
 });
