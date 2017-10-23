@@ -5,6 +5,7 @@ import { Menu } from '../Menu/Menu';
 import DevTools from 'mobx-react-devtools';
 import { Hero } from '../Row/Hero';
 import { Loader } from '../Loader/Loader';
+import { Login } from '../Login/Login';
 import { AppStore } from '../../models/AppStore';
 
 @observer
@@ -23,7 +24,8 @@ export class App extends React.Component<{ appStore: AppStore }, {}> {
                 <Loader isLoaded={this.props.appStore.appIsLoaded}/>
                 <Menu menuStore={this.props.appStore.menuStore}/>
                 <Hero />
-                <DevTools />
+                {/*<Login />*/}
+                <DevTools   />
             </div>
         );
     }
