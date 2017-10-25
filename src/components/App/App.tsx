@@ -7,6 +7,7 @@ import { Hero } from '../Row/Hero';
 import { Loader } from '../Loader/Loader';
 import { Login } from '../Login/Login';
 import { AppStore } from '../../models/AppStore';
+import { Row } from '../Row/Row';
 
 @observer
 export class App extends React.Component<{ appStore: AppStore }, {}> {
@@ -22,8 +23,9 @@ export class App extends React.Component<{ appStore: AppStore }, {}> {
         return (
             <div className={background}>
                 <Loader isLoaded={this.props.appStore.appIsLoaded}/>
-                <Menu menuStore={this.props.appStore.menuStore}/>
+                <Menu />
                 <Hero />
+                <Row />
                 {/*<Login />*/}
                 <DevTools   />
             </div>
