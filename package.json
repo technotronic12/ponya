@@ -39,6 +39,7 @@
   },
   "dependencies": {
     "express": "^4.16.2",
+    "file-loader": "^1.1.5",
     "mobx": "^3.2.1",
     "mobx-react": "^4.2.2",
     "mobx-react-devtools": "^4.2.15",
@@ -47,6 +48,7 @@
     "react-dom": "^15.6.1",
     "react-router": "^4.2.0",
     "tslint": "^5.7.0",
-    "typed.js": "^2.0.6"
+    "typed.js": "^2.0.6",
+    "webp-loader": "^0.2.1"
   }
 }

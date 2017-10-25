@@ -25,9 +25,7 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: [
-                    {
-                        loader: 'style-loader'
-                    },
+                    { loader: 'style-loader' },
                     {
                         loader: 'css-loader',
                         options: {
@@ -44,6 +42,13 @@ module.exports = {
                             camelCase: true
                         }
                     }
+                ]
+            },
+            {
+                test: /\.(jpe?g|png)$/i,
+                use: [
+                    { loader: 'file-loader' },
+                    { loader: 'webp-loader' }
                 ]
             }
         ]
