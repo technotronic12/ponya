@@ -1,13 +1,28 @@
-.full-width-bg {
-	position: absolute;
-	top: -100px;
+.hero {
+	height: 100vh;
+	position: relative;
+	text-align: center;
 	width: 100%;
-	z-index: -1;
+	min-height: 350px;
+	background-color: #252a30;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	border-bottom: 3px solid #56a3e7;
 }
 
-.hello {
+.white {
+	background-color: white;
+	height: 100vh;
+}
+
+.background {
+	background-image: url('../../../assets/ide.jpg');
+}
+
+.greeting-text {
 	font-size: 2em;
-	color: white;
+	color: #ff8a2a;
 }
 
 .travel {
@@ -15,12 +30,11 @@
 	color: white;
 }
 
-.center-position {
+.greeting {
 	width: 100%;
 	position: relative;
-	top: 200px;
+	top: 40%;
 	text-align: center;
-	margin-top: 25px;
 	font-size: 21px;
 }
 
@@ -95,4 +109,3 @@
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
 }
-
