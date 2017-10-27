@@ -7,6 +7,8 @@ import { Hero } from '../Row/Hero';
 import { Loader } from '../Loader/Loader';
 import { AppStore } from '../../models/AppStore';
 import { Row } from '../Row/Row';
+import { menuStore } from '../../models/MenuStore';
+import { MenuButton } from '../MenuButton/MenuButton';
 
 @observer
 export class App extends React.Component<{ appStore: AppStore }, {}> {
@@ -22,6 +24,7 @@ export class App extends React.Component<{ appStore: AppStore }, {}> {
         return (
             <div className={background}>
                 <Loader isLoaded={this.props.appStore.appIsLoaded}/>
+                <MenuButton onClick={menuStore.toggleOpen} isOpen={menuStore.open}/>
                 <Menu />
                 <Hero />
                 <Row />

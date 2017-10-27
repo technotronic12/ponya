@@ -4,15 +4,26 @@
 }
 
 .menu-button {
-    width: 100px;
     text-align: center;
     line-height: 100px;
-    text-transform: uppercase;
+    height: 100vh;
+    overflow-x: hidden;
+    transition: 0.5s;
+    width: 60px;
 }
 
 .container {
-    display: inline-block;
+    position: absolute;
+    padding: 20px;
     cursor: pointer;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.change.container {
+    left: 120px;
 }
 
 .bar1, .bar2, .bar3 {

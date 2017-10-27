@@ -14,7 +14,7 @@ export class MenuButton extends React.Component<{ onClick, isOpen }, {}> {
 
     render() {
         return (
-          <div className={`${style.container}`} onClick={this.toggleOpen}>
+          <div className={`${style.container} ` + (this.props.isOpen ? style.change : '')} onClick={this.toggleOpen}>
               <div className={`${style.bar1} ` + (this.props.isOpen ? style.change : '')}></div>
               <div className={`${style.bar2} ` + (this.props.isOpen ? style.change : '')}></div>
               <div className={`${style.bar3} ` + (this.props.isOpen ? style.change : '')}></div>

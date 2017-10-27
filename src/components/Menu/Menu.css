@@ -1,15 +1,19 @@
 .menu {
-	position: absolute;
+	position: fixed;
 	z-index: 2;
-	top: 40px;
-	left: 40px;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	overflow-x: hidden;
+	transition: 0.5s;
+	width: 0;
+	background-color: #1a1a1a;
 }
 
-.buttons-container {
-	height: 100%;
+.open {
+	width: 200px;
 }
 
 .container {
-	width: 1024px;
 	margin: 0 auto;
 }
