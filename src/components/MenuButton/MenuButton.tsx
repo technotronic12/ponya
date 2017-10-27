@@ -1,19 +1,24 @@
 import * as React from 'react';
-import { observer } from 'mobx-react';
-import * as style from './MenuButton.css'
+import * as style from './MenuButton.css';
+// < {props}, {state}>
+export class MenuButton extends React.Component<{ onClick, isOpen }, {}> {
 
-@observer
-export class MenuButton extends React.Component<{ item, onClick }, {}> {
-
-    selectItem() {
-        this.props.onClick(this.props.item);
+    constructor() {
+        super();
+        this.state = { open: false };
     }
+
+    toggleOpen = () => {
+        this.props.onClick();
+    };
 
     render() {
         return (
-            <div className={style.menuButton} onClick={this.selectItem.bind(this)}>
-                { this.props.item.text }
-            </div>
+          <div className={`${style.container}`} onClick={this.toggleOpen}>
+              <div className={`${style.bar1} ` + (this.props.isOpen ? style.change : '')}></div>
+              <div className={`${style.bar2} ` + (this.props.isOpen ? style.change : '')}></div>
+              <div className={`${style.bar3} ` + (this.props.isOpen ? style.change : '')}></div>
+          </div>
         );
     }
 }

@@ -5,7 +5,6 @@ import { Menu } from '../Menu/Menu';
 import DevTools from 'mobx-react-devtools';
 import { Hero } from '../Row/Hero';
 import { Loader } from '../Loader/Loader';
-import { Login } from '../Login/Login';
 import { AppStore } from '../../models/AppStore';
 import { Row } from '../Row/Row';
 
