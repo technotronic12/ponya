@@ -17,7 +17,7 @@
 }
 
 .background {
-	background-image: url('../../../assets/me5.jpg');
+	background-image: url('../../../assets/me6.jpg');
 }
 
 .greeting-text {
@@ -39,7 +39,7 @@
 }
 
 .greeting {
-	width: 440px;
+	width: 445px;
 	position: absolute;
 	top: 25%;
 	right: 20px;

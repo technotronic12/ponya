@@ -4,22 +4,21 @@ import Typist from 'react-typist';
 
 export class Hero extends React.Component {
     render() {
-        const initialDelayInMs = 1000;
+        const initialDelayInMs = 1500;
         const delayInMs = 700;
         const sentences = [
-            'node developer.',
+            'Scala developer.',
             'Javascript developer.',
-            'React developer.',
-            'Scala developer.'
+            'node developer.'
         ];
 
         return (
           <div className={`${style.hero} ${style.background}`}>
               <div className={style.greeting}>
-                      <span className={style.greetingName}>Hi, I'm Eli.</span>
+                  <span className={style.greetingName}>Hi, I'm Eli.</span>
                       <Typist>
-                          <Typist.Delay ms={initialDelayInMs}/>
-                          <span>I am a </span>
+                        <Typist.Delay ms={initialDelayInMs}/>
+                        <span>I am a </span>
                           {
                               sentences.map((sentence, index) => {
                                   return (
@@ -30,7 +29,8 @@ export class Hero extends React.Component {
                                   )
                               })
                           }
-                          <span className={style.purple}>Fullstack developer</span><span>.</span>
+                          <span className={style.purple}>Fullstack developer</span>.
+                          <Typist.Delay ms={delayInMs}/>
                           <br/>
                           <span>I enjoy writing software for fun and profit.</span>
                       </Typist>
