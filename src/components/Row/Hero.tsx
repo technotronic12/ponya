@@ -33,7 +33,6 @@ export class Hero extends React.Component {
                           <span className={style.purple}>Fullstack developer</span><span>.</span>
                           <br/>
                           <span>I enjoy writing software for fun and profit.</span>
-
                       </Typist>
               </div>
           </div>
