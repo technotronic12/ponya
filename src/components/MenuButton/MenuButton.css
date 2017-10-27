@@ -13,7 +13,7 @@
 }
 
 .container {
-    position: absolute;
+	position: fixed;
     padding: 20px;
     cursor: pointer;
     z-index: 3;
@@ -37,6 +37,7 @@
 .change.bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
+	background-color: #1a1a1a;
 }
 
 .change.bar2 {
@@ -46,4 +47,5 @@
 .change.bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
+	background-color: #1a1a1a;
 }
