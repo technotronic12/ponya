@@ -17,12 +17,20 @@
 }
 
 .background {
-	background-image: url('../../../assets/me4.jpg');
+	background-image: url('../../../assets/me5.jpg');
 }
 
 .greeting-text {
 	font-size: 2em;
 	color: white;
+}
+
+.greeting-name {
+	font-size: 44px;
+}
+
+.purple {
+	color: #7b1aff;
 }
 
 .travel {
@@ -31,12 +39,13 @@
 }
 
 .greeting {
-	width: 100%;
-	position: relative;
-	top: 40%;
-	text-align: center;
+	width: 500px;
+	position: absolute;
+	top: 25%;
+	right: 20px;
+	text-align: left;
 	font-size: 21px;
-	display: none;
+	color: #fff;
 }
 
 .slidein {

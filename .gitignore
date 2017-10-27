@@ -1,6 +1,5 @@
 node_modules/
 static/bundle.js
-.vscode
 .idea
 .awcache
 assets/psd/
@@ -10,4 +9,6 @@ yarn-error.log
 assets/ponyaSketch.jpg
 assets/space.jpg
 assets/spaceSmall.jpg
-/.idea/vcs.xml
+assets/ide.webp
+assets/me3.jpg
+package-lock.json
