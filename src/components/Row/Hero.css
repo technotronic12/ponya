@@ -8,7 +8,7 @@
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
-	border-bottom: 3px solid #56a3e7;
+	border-bottom: 3px solid deeppink;
 }
 
 .white {
@@ -17,12 +17,12 @@
 }
 
 .background {
-	background-image: url('../../../assets/ide.jpg');
+	background-image: url('../../../assets/me4.jpg');
 }
 
 .greeting-text {
 	font-size: 2em;
-	color: #ff8a2a;
+	color: white;
 }
 
 .travel {
@@ -36,6 +36,7 @@
 	top: 40%;
 	text-align: center;
 	font-size: 21px;
+	display: none;
 }
 
 .slidein {

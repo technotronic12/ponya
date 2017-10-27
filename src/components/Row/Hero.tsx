@@ -2,7 +2,6 @@ import * as React from 'react';
 import * as style from './Hero.css';
 
 export class Hero extends React.Component {
-    // TODO: rearrange animations
     render() {
         return (
           <div>
