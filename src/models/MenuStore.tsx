@@ -1,8 +1,8 @@
 import { observable, action } from 'mobx';
-import { MenuItem, menuItems } from './MenuItem';
+import { menuItems, MenuItemData } from './MenuItemData';
 
 export class MenuStore {
-    @observable menuItems: MenuItem[] = [];
+    @observable menuItems: MenuItemData[] = [];
     @observable selectedMenuItem = {};
     @observable open = false;
 

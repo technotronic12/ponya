@@ -1,0 +1,16 @@
+.open {
+	opacity: 1;
+}
+
+.closed {
+	opacity: 0;
+}
+
+.icon {
+	cursor: pointer;
+}
+
+.icon:not(:first-of-type) {
+	display: block;
+	margin-top: 20px;
+}
