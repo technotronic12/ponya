@@ -25,7 +25,6 @@ export class App extends React.Component<{ appStore: AppStore }, {}> {
                 <Menu />
                 <Hero />
                 <Row />
-                {/*<Login />*/}
                 <DevTools   />
             </div>
         );
