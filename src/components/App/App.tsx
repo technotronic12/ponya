@@ -10,23 +10,23 @@ import { About } from '../About/About';
 
 @observer
 export class App extends React.Component<{ appStore: AppStore }, {}> {
-    constructor() {
-        super();
-    }
+  constructor() {
+    super();
+  }
 
-    componentDidMount() {
-        this.props.appStore.toggleLoaded();
-    }
+  componentDidMount() {
+    this.props.appStore.toggleLoaded();
+  }
 
-    render() {
-        return (
-            <div className={background}>
-                <Loader isLoaded={this.props.appStore.appIsLoaded}/>
-                <Menu />
-                <Hero />
-              <About/>
-                <DevTools   />
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div className={background}>
+        <Loader isLoaded={this.props.appStore.appIsLoaded}/>
+        <Menu/>
+        <Hero/>
+        <About/>
+        <DevTools/>
+      </div>
+    );
+  }
 }
