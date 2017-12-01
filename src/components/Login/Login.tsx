@@ -1,5 +1,5 @@
 import * as React from 'react';
-import * as style from './Login.css';
+import * as style from './Login.scss';
 
 export class Login extends React.Component {
     render() {

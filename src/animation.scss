@@ -1,3 +1,6 @@
+$fade-time: 0.5s;
+$white: #fff;
+
 .slidein {
 	animation-name: slidein;
 	-webkit-animation-name: slidein;
@@ -27,11 +30,11 @@
 }
 
 .fadein {
-	-webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
-	-moz-animation: fadein 0.5s; /* Firefox < 16 */
-	-ms-animation: fadein 0.5s; /* Internet Explorer */
-	-o-animation: fadein 0.5s; /* Opera < 12.1 */
-	animation: fadein 0.5s;
+	-webkit-animation: fadein $fade-time; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein $fade-time; /* Firefox < 16 */
+	-ms-animation: fadein $fade-time; /* Internet Explorer */
+	-o-animation: fadein $fade-time; /* Opera < 12.1 */
+	animation: fadein $fade-time;
 }
 
 @keyframes fadein {
@@ -45,11 +48,11 @@
 }
 
 .fadeout {
-	-webkit-animation: fadeout 0.5s; /* Safari, Chrome and Opera > 12.1 */
-	-moz-animation: fadeout 0.5s; /* Firefox < 16 */
-	-ms-animation: fadeout 0.5s; /* Internet Explorer */
-	-o-animation: fadeout 0.5s; /* Opera < 12.1 */
-	animation: fadeout 0.5s;
+	-webkit-animation: fadeout $fade-time; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadeout $fade-time; /* Firefox < 16 */
+	-ms-animation: fadeout $fade-time; /* Internet Explorer */
+	-o-animation: fadeout $fade-time; /* Opera < 12.1 */
+	animation: fadeout $fade-time;
 }
 
 @keyframes fadeout {
@@ -80,7 +83,7 @@
 	opacity: 0;
 	width: 100%;
 	height: 2px;
-	background: white;
+	background: $white;
 	animation-name: strike;
 	animation-delay: 2s;
 	animation-duration: 1s;

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { observer } from 'mobx-react';
-import * as style from './Loader.css';
+import * as style from './Loader.scss';
 
 @observer
 export class Loader extends React.Component< { isLoaded: () => Boolean }, {}> {

@@ -4,8 +4,8 @@ import * as _ from 'lodash';
 import { menuStore } from '../../models/MenuStore';
 import { MenuButton } from './MenuButton/MenuButton';
 import { MenuItem } from './MenuItem/MenuItem';
-import * as style from './Menu.css';
-import * as animations from '../../animation.css';
+import * as style from './Menu.scss';
+import * as animations from '../../animation.scss';
 
 @observer
 export class Menu extends React.Component {

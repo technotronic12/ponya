@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Typist from 'react-typist';
-import * as style from './TypedGreeting.css';
+import * as style from './TypedGreeting.scss';
 
 export class TypedGreeting extends React.Component {
 
