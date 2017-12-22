@@ -16,17 +16,14 @@ export class App extends React.Component<{ appStore: AppStore }, {}> {
   }
 
   componentDidMount() {
-    setTimeout(() => {
-      this.props.appStore.toggleLoaded();
-    }, 1500);
+    this.props.appStore.toggleLoaded();
   }
 
   render() {
     return (
       <div className={background}>
         {/*<Loader isLoaded={this.props.appStore.appIsLoaded}/>*/}
-        {this.props.appStore.appIsLoaded() ? null :
-          <DotLoader isLoaded={this.props.appStore.appIsLoaded} colors={['#8c39fe', 'deeppink', 'white']}/>}
+        <DotLoader isLoaded={this.props.appStore.appIsLoaded} dotColors={['#8c39fe', 'deeppink', 'white']} transitionDuration={1000}/>
         <Menu/>
         <Hero/>
         <About/>

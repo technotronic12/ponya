@@ -1,12 +1,12 @@
 import * as React from 'react';
-import { observer } from 'mobx-react';
+import { Transition } from 'react-transition-group'
 import * as style from './DotLoader.scss';
 import { Dot } from './Dot/Dot';
 
-@observer
-export class DotLoader extends React.Component<{ isLoaded: () => Boolean, colors: Array<String> }, { index: number }> {
+export class DotLoader extends React.Component<{ isLoaded: () => Boolean, dotColors: Array<String>, transitionDuration: number }, { index: number }> {
 
   interval;
+  dotAnimationTime = 500;
 
   constructor(props) {
     super(props);
@@ -15,21 +15,40 @@ export class DotLoader extends React.Component<{ isLoaded: () => Boolean, colors
 
   componentWillMount() {
     this.interval = setInterval(() => {
-      this.setState({ index: (this.state.index + 1) % this.props.colors.length });
-    }, 500);
+      this.setState({ index: this.animateDotIndex() });
+    }, this.dotAnimationTime);
   }
 
   componentWillUnmount() {
     clearInterval(this.interval);
   }
 
+  private animateDotIndex() {
+    return (this.state.index + 1) % this.props.dotColors.length;
+  }
+
   render() {
+    const { transitionDuration } = this.props;
+
+    const defaultStyle = {
+      transition: `all ${transitionDuration}ms ease-in-out`,
+    };
+
+    const transitionStyles = {
+      entered: { opacity: 1 },
+      exiting: { opacity: 0 },
+    };
+
     return (
-      <div id={style.wrapper} className={this.props.isLoaded() ? style.fadeout : ''}>
-        <div id={style.dotsWrapper}>
-          {this.props.colors.map((color, id) => <Dot key={id} color={color} big={this.state.index == id}/>)}
-        </div>
-      </div>
+      <Transition in={!this.props.isLoaded()} timeout={transitionDuration} unmountOnExit={true}>
+        {state => (
+          <div id={style.wrapper} style={{ ...defaultStyle, ...transitionStyles[state] }}>
+            <div id={style.dotsWrapper}>
+              {this.props.dotColors.map((color, id) => <Dot key={id} color={color} big={this.state.index == id}/>)}
+            </div>
+          </div>
+        )}
+      </Transition>
     )
   }
 }
