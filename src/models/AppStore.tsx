@@ -1,16 +1,15 @@
-import { observable, action } from 'mobx';
-import { menuStore } from './MenuStore';
+import { action, observable } from 'mobx';
 
 export class AppStore {
-    @observable loaded: Boolean;
+  @observable loaded: Boolean;
 
-    @action toggleLoaded = () => { this.loaded = !this.loaded };
-    @action appIsLoaded = () => this.loaded;
+  @observable appIsLoaded = () => this.loaded;
+  @action toggleLoaded = () => { this.loaded = !this.loaded };
 
-    constructor() {
-        this.loaded = false;
-    }
+  constructor() {
+    this.loaded = false;
+  }
 }
 
-const appStore =  new AppStore();
+const appStore = new AppStore();
 export { appStore };

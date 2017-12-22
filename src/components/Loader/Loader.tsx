@@ -6,7 +6,7 @@ import * as style from './Loader.scss';
 export class Loader extends React.Component< { isLoaded: () => Boolean }, {}> {
     render() {
         return (
-            <div id={style.wrapper} className={this.props.isLoaded ? style.fadeout : ''}>
+          <div id={style.wrapper} className={this.props.isLoaded() ? style.fadeout : ''}>
                 <div id={style.loader}/>
             </div>
         )

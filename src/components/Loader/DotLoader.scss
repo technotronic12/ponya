@@ -1,0 +1,75 @@
+#wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: #00021b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+$dot-size: 25px;
+$dot-increase-factor: 2;
+$animation-time: 300ms;
+
+.dot {
+  width: $dot-size;
+  height: $dot-size;
+  border-radius: 50%;
+  margin: 0 auto;
+  -webkit-transition: all $animation-time ease-in-out;
+  -moz-transition: all $animation-time ease-in-out;
+  -ms-transition: all $animation-time ease-in-out;
+  -o-transition: all $animation-time ease-in-out;
+  transition: all $animation-time ease-in-out;
+}
+
+#dots-wrapper {
+  display: flex;
+  z-index: 1500;
+}
+
+.dot-container {
+  display: flex;
+  align-items: center;
+  width: $dot-size * $dot-increase-factor;
+  height: $dot-size * $dot-increase-factor;
+}
+
+#left-dot {
+  background-color: #8c39fe;
+}
+
+#center-dot {
+  background-color: deeppink;
+}
+
+#right-dot {
+  background-color: white;
+}
+
+.big {
+  width: $dot-size * $dot-increase-factor;
+  height: $dot-size * $dot-increase-factor;
+}
+
+.fadeout {
+  -webkit-animation: fadeout 1s forwards; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeout 1s forwards; /* Firefox < 16 */
+  -ms-animation: fadeout 1s forwards; /* Internet Explorer */
+  animation: fadeout 1s forwards;
+  display: none;
+}
+
+@keyframes fadeout {
+  from { opacity: 1; }
+  to { opacity: 0; visibility: hidden; }
+}
+
+@-webkit-keyframes fadeout {
+  from { opacity: 1; }
+  to { opacity: 0; visibility: hidden; }
+}
