@@ -1,8 +1,31 @@
-.white {
+.about {
   background-color: white;
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
 
-  .about-text {
-    color: #8c39fe;
+.about-text-title {
+  font-size: 44px;
+  color: #8c39fe;
+}
+
+.about-text {
+  color: #252a30;
+
+  p {
+    line-height: 1.3em;
   }
+}
+
+.purple {
+  //color: #8c39fe;
+  font-weight: bold;
+}
+
+.container {
+  width: 60%;
+  max-width: 1024px;
+  height: 100vh;
+  padding: 60px 20px;
+  text-align: left;
 }
