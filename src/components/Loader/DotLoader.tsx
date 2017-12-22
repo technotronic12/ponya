@@ -1,7 +1,8 @@
 import * as React from 'react';
-import { Transition } from 'react-transition-group'
+import { Transition, TransitionGroup } from 'react-transition-group'
 import * as style from './DotLoader.scss';
 import { Dot } from './Dot/Dot';
+import Fader from '../Fader/Fader';
 
 export class DotLoader extends React.Component<{ isLoaded: () => Boolean, dotColors: Array<String>, transitionDuration: number }, { index: number }> {
 
@@ -28,27 +29,12 @@ export class DotLoader extends React.Component<{ isLoaded: () => Boolean, dotCol
   }
 
   render() {
-    const { transitionDuration } = this.props;
-
-    const defaultStyle = {
-      transition: `all ${transitionDuration}ms ease-in-out`,
-    };
-
-    const transitionStyles = {
-      entered: { opacity: 1 },
-      exiting: { opacity: 0 },
-    };
-
     return (
-      <Transition in={!this.props.isLoaded()} timeout={transitionDuration} unmountOnExit={true}>
-        {state => (
-          <div id={style.wrapper} style={{ ...defaultStyle, ...transitionStyles[state] }}>
-            <div id={style.dotsWrapper}>
-              {this.props.dotColors.map((color, id) => <Dot key={id} color={color} big={this.state.index == id}/>)}
-            </div>
-          </div>
-        )}
-      </Transition>
+      <Fader show={!this.props.isLoaded()} transitionDuration={this.props.transitionDuration} isFixed={true} zIndex={1000}>
+        <div id={style.wrapper}>
+          {this.props.dotColors.map((color, id) => <Dot key={id} color={color} big={this.state.index == id}/>)}
+        </div>
+      </Fader>
     )
   }
 }
