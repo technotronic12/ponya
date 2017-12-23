@@ -9,8 +9,8 @@ export class DotLoader extends React.Component<{ isLoaded: () => Boolean, dotCol
   interval;
   dotAnimationTime = 500;
 
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = { index: 0 };
   }
 
