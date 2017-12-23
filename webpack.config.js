@@ -49,6 +49,10 @@ module.exports = {
           { loader: 'file-loader' },
           { loader: 'webp-loader' }
         ]
+      }, {
+        test: /\.spec\.tsx$/,
+        use: 'mocha-loader',
+        exclude: /node_modules/,
       }
     ]
   },

@@ -13,10 +13,10 @@ app.use(express.static(path.join(__dirname, "/")));
 app.use(webpackMiddleware(compiler, {
     noInfo: false,
     quiet: false,
-    lazy: true,
+  lazy: false,
     watchOptions: {
-        aggregateTimeout: 300,
-        poll: true
+      aggregateTimeout: 500,
+      poll: false
     },
     publicPath: "/static/",
     index: "index.html",
