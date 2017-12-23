@@ -4,6 +4,7 @@
     "module": "commonjs",
     "declaration": false,
     "noImplicitAny": false,
+    "sourceMap": true,
     "removeComments": true,
     "experimentalDecorators": true,
     "noLib": false,

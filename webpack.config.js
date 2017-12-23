@@ -1,9 +1,10 @@
 const path = require('path');
+const webpack = require('webpack');
 const { dashedCssClassName } = require('css-loader-dashed-class-names');
-const { CheckerPlugin } = require('awesome-typescript-loader');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
-  devtool: 'eval',
+  devtool: 'inline-source-map',
   entry: [
     './src/index'
   ],
@@ -19,7 +20,7 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        loader: 'awesome-typescript-loader'
+        loader: 'ts-loader'
       }, {
         test: /\.(scss|css)$/,
         use: [
@@ -57,6 +58,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new CheckerPlugin()
+    //new CleanWebpackPlugin(['dist']),
+    new webpack.WatchIgnorePlugin([/\.js$/, /\.d\.ts$/])
   ]
 };
