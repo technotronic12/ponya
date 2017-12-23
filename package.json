@@ -4,8 +4,8 @@
   "description": "Ponya.space - Eli's travel trough space",
   "scripts": {
     "start": "node server.js",
-    "test": "mocha dist/**/*.spec.js --reporter spec",
-    "watch": "mocha dist/**/*.spec.js --reporter spec --watch"
+    "test": "tsc && mocha dist/**/*.spec.js --reporter spec",
+    "watch": "tsc && mocha dist/**/*.spec.js --reporter spec --watch"
   },
   "repository": {
     "type": "git",
