@@ -1,18 +1,18 @@
 const path = require('path');
-const webpack = require('webpack');
-const { dashedCssClassName } = require('css-loader-dashed-class-names');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
-  devtool: 'inline-source-map',
-  entry: [
-    './src/index'
-  ],
+  entry: {
+    app: './src/index'
+  },
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'bundle.js',
+    filename: 'app.bundle.js',
     publicPath: '/static/'
   },
+  plugins: [
+    new CleanWebpackPlugin(['dist'])
+  ],
   resolve: {
     extensions: ['.js', '.ts', '.tsx']
   },
@@ -49,9 +49,5 @@ module.exports = {
         exclude: /node_modules/,
       }
     ]
-  },
-  plugins: [
-    new CleanWebpackPlugin(['dist']),
-    new webpack.WatchIgnorePlugin([/\.js$/, /\.d\.ts$/])
-  ]
+  }
 };
