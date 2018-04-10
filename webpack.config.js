@@ -58,7 +58,7 @@ module.exports = {
     ]
   },
   plugins: [
-    //new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(['dist']),
     new webpack.WatchIgnorePlugin([/\.js$/, /\.d\.ts$/])
   ]
 };
