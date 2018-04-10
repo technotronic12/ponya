@@ -27,11 +27,19 @@ module.exports = {
         use: [
           { loader: 'style-loader' },
           {
-            loader: 'typings-for-css-modules-loader',
+            loader: 'css-loader',
             options: {
               modules: true,
+              importLoaders: 1,
               camelCase: true,
-              namedExport: true
+              localIdentName: '[name]-[local]',
+              getLocalIdent: dashedCssClassName
+            }
+          },
+          {
+            loader: 'typings-for-css-modules-loader',
+            options: {
+              camelCase: true
             }
           }, {
             loader: "sass-loader" // compiles Sass to CSS
