@@ -24,8 +24,9 @@ module.exports = {
       }, {
         test: /\.(scss|css)$/,
         use: [
-          { loader: 'style-loader' },
           {
+            loader: 'style-loader'
+          }, {
             loader: 'typings-for-css-modules-loader',
             options: {
               modules: true,
@@ -42,10 +43,6 @@ module.exports = {
           { loader: 'file-loader' },
           { loader: 'webp-loader' }
         ]
-      }, {
-        test: /\.spec\.tsx$/,
-        use: 'mocha-loader',
-        exclude: /node_modules/,
       }
     ]
   }
