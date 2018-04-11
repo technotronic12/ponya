@@ -33,7 +33,6 @@
     "@types/mocha": "^2.2.45",
     "@types/react": "^15.6.10",
     "@types/react-dom": "^15.5.1",
-    "awesome-typescript-loader": "^3.4.1",
     "babel-cli": "^6.26.0",
     "babel-preset-es2016": "^6.24.1",
     "chai": "^4.1.2",
@@ -49,9 +48,7 @@
     "typed-css-modules": "^0.3.0",
     "typescript": "^2.6.2",
     "typings-for-css-modules-loader": "^1.7.0",
-    "webpack-cli": "^2.0.14",
-    "webpack-dev-middleware": "latest",
-    "webpack-dev-server": "latest"
+    "webpack-cli": "^2.0.14"
   },
   "dependencies": {
     "compression-webpack-plugin": "^1.1.11",
