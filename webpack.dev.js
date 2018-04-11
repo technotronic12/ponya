@@ -4,9 +4,7 @@ const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
   devtool: 'inline-source-map',
-  devServer: {
-    contentBase: './dist'
-  },
+  mode: 'development',
   plugins: [
     new webpack.WatchIgnorePlugin([/\.js$/, /\.d\.ts$/])
   ]

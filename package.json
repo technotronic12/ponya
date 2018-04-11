@@ -4,6 +4,7 @@
   "description": "Ponya.space - Eli's travel trough space",
   "scripts": {
     "start": "node server.js",
+    "local": "webpack --config webpack.dev.js && node server.js",
     "test": "tsc && mocha dist/**/*.spec.js --reporter spec",
     "watch": "tsc && mocha dist/**/*.spec.js --reporter spec --watch",
     "postinstall": "webpack --config webpack.prod.js"

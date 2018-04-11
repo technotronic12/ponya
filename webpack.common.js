@@ -7,8 +7,7 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'app.bundle.js',
-    publicPath: '/static/'
+    filename: 'app.bundle.js'
   },
   plugins: [
     new CleanWebpackPlugin(['dist'])
