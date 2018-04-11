@@ -54,6 +54,7 @@
     "webpack-dev-server": "latest"
   },
   "dependencies": {
+    "compression-webpack-plugin": "^1.1.11",
     "express": "^4.16.2",
     "file-loader": "^1.1.6",
     "html-webpack-plugin": "^3.2.0",
