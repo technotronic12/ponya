@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Ponya.space - Eli's travel trough space",
   "scripts": {
-    "starting": "node server.js",
+    "start": "node server.js",
     "test": "tsc && mocha dist/**/*.spec.js --reporter spec",
     "watch": "tsc && mocha dist/**/*.spec.js --reporter spec --watch",
-    "start": "webpack --config webpack.prod.js"
+    "postinstall": "webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
