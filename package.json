@@ -6,7 +6,7 @@
     "start": "node server.js",
     "local": "webpack --config webpack.dev.js && node server.js",
     "test": "tsc && mocha dist/**/*.spec.js --reporter spec --require ignore-styles",
-    "watch": "tsc && mocha dist/**/*.spec.js --reporter spec --watch",
+    "watch": "tsc && mocha dist/**/*.spec.js --reporter spec --watch --require ignore-styles",
     "postinstall": "webpack --config webpack.prod.js"
   },
   "engines": {
