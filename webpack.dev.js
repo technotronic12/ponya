@@ -1,7 +1,8 @@
 const webpack = require('webpack');
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+//const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = merge(common, {
   devtool: 'inline-source-map',
@@ -16,6 +17,7 @@ module.exports = merge(common, {
   },
   plugins: [
     new webpack.WatchIgnorePlugin([/\.js$/, /\.d\.ts$/]),
-    new BundleAnalyzerPlugin()
+    CopyWebpackPlugin([{ from: 'src/**/*.scss' }])
+    //new BundleAnalyzerPlugin()
   ]
 });

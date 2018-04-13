@@ -43,7 +43,7 @@ module.exports = {
           { loader: 'file-loader' },
           { loader: 'webp-loader' }
         ]
-      }
+      },
     ]
   }
 };
