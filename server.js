@@ -5,7 +5,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.listen(port, function () {
-  console.log("Started listening on port", port);
+  console.log('Started listening on port', port);
 });
 
 app.get('*.js', function (req, res, next) {
