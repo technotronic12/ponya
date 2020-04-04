@@ -10,6 +10,9 @@ module.exports = {
     path: path.join(__dirname, 'dist'),
     filename: 'app.bundle.js'
   },
+  resolve: {
+    extensions: ['.js', '.ts', '.tsx', '.scss']
+  },
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new CompressionPlugin({
