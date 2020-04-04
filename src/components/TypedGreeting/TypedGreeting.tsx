@@ -32,7 +32,7 @@ export class TypedGreeting extends React.Component {
                   <span className={style.purple}>Fullstack developer</span>.
               <Typist.Delay ms={delayInMs}/>
               <br/>
-              <span>I enjoy writing software for fun and profit.</span>
+                <span>Welcome to my space ⭐🚀🌕</span>
               </Typist>
           </div>
         );
