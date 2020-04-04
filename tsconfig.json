@@ -8,6 +8,10 @@
     "removeComments": true,
     "experimentalDecorators": true,
     "noLib": false,
+    "lib": [
+      "dom",
+      "es6"
+    ],
     "jsx": "react",
     "outDir": "dist/src"
   },
