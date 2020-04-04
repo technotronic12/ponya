@@ -8,11 +8,12 @@
 .about-text-title {
   font-size: 44px;
   color: #8c39fe;
+  margin-bottom: 2.5rem;
 }
 
 .about-text {
-  color: black;
-  //color: #fff;
+  color: #1a1a1a;
+  font-size: 1rem;
 
   p {
     line-height: 1.3em;
@@ -29,7 +30,7 @@
   max-width: 1024px;
   height: 100vh;
   padding: 60px 20px;
-  text-align: left;
+  text-align: center;
 }
 
 .left, .right {
