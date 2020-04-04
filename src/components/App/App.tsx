@@ -7,7 +7,6 @@ import { Hero } from '../Hero/Hero';
 import { AppStore } from '../../models/AppStore';
 import { About } from '../About/About';
 import { DotLoader } from '../Loader/DotLoader';
-import { CSSTransitionGroup } from 'react-transition-group'
 
 @observer
 export class App extends React.Component<{ appStore: AppStore }, {}> {

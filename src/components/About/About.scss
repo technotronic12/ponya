@@ -1,5 +1,6 @@
 .about {
-  background-color: white;
+  //background-color: #1A1A1A;
+  background: white;
   display: flex;
   justify-content: center;
 }
@@ -10,7 +11,8 @@
 }
 
 .about-text {
-  color: #252a30;
+  color: black;
+  //color: #fff;
 
   p {
     line-height: 1.3em;

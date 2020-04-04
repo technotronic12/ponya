@@ -1,5 +1,4 @@
 const path = require('path');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
 
 module.exports = {
@@ -11,10 +10,9 @@ module.exports = {
     filename: 'app.bundle.js'
   },
   resolve: {
-    extensions: ['.js', '.ts', '.tsx', '.scss']
+    extensions: ['.js', '.ts', '.tsx']
   },
   plugins: [
-    new CleanWebpackPlugin(['dist']),
     new CompressionPlugin({
       asset: '[path].gz[query]',
       algorithm: 'gzip',
@@ -42,7 +40,7 @@ module.exports = {
               namedExport: true
             }
           }, {
-            loader: "sass-loader" // compiles Sass to CSS
+            loader: 'sass-loader' // compiles Sass to CSS
           }
         ]
       }, {

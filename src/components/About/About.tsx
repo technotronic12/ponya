@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as style from './About.scss';
 
-export class About extends React.Component {
+export class About extends React.Component<{}, {}> {
   render() {
     return (
       <div className={`${style.about}`}>

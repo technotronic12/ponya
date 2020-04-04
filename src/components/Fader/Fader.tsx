@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { Transition, TransitionGroup } from 'react-transition-group'
+import { Transition } from 'react-transition-group';
 
-class Fader extends React.Component<{ transitionDuration: number, show: Boolean, isFixed: Boolean, zIndex?: number }, {}> {
+class Fader extends React.Component<{ transitionDuration: number, show: boolean, isFixed: boolean, zIndex?: number }, {}> {
 
   render() {
     const { children, transitionDuration, show, isFixed, zIndex } = this.props;
