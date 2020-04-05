@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { observer } from 'mobx-react';
-import { background } from './App.scss';
+import { background, divider } from './App.scss';
 import { Menu } from '../Menu/Menu';
 import { Hero } from '../Hero/Hero';
 import { AppStore } from '../../models/AppStore';
@@ -26,6 +26,7 @@ export class App extends React.Component<{ appStore: AppStore }, {}> {
         <Menu/>
         <Hero/>
         <About/>
+        <hr className={divider}/>
         <Timeline/>
         {/*<DevTools/>*/}
       </div>
