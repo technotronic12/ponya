@@ -1,5 +1,6 @@
+@import "src/common-styles";
+
 .about {
-  //background-color: #1A1A1A;
   background: white;
   display: flex;
   justify-content: center;
@@ -7,22 +8,17 @@
 
 .about-text-title {
   font-size: 44px;
-  color: #8c39fe;
+  color: $purple;
   margin-bottom: 2.5rem;
 }
 
 .about-text {
-  color: #1a1a1a;
+  color: $dark-grey;
   font-size: 1rem;
 
   p {
     line-height: 1.3em;
   }
-}
-
-.purple {
-  //color: #8c39fe;
-  font-weight: bold;
 }
 
 .container {

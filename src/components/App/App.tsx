@@ -6,6 +6,7 @@ import { Hero } from '../Hero/Hero';
 import { AppStore } from '../../models/AppStore';
 import { About } from '../About/About';
 import { DotLoader } from '../Loader/DotLoader';
+import { Timeline } from '../Timeline/Timeline';
 
 @observer
 export class App extends React.Component<{ appStore: AppStore }, {}> {
@@ -25,6 +26,7 @@ export class App extends React.Component<{ appStore: AppStore }, {}> {
         <Menu/>
         <Hero/>
         <About/>
+        <Timeline/>
         {/*<DevTools/>*/}
       </div>
     );
