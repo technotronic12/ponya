@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Transition, TransitionGroup } from 'react-transition-group'
 import * as style from './DotLoader.scss';
 import { Dot } from './Dot/Dot';
 import Fader from '../Fader/Fader';
