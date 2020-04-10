@@ -2,7 +2,8 @@ import * as React from 'react';
 import * as styles from './TimelineItem.scss';
 import { ResumeItemTitle } from '../TimelineData';
 
-export class TimelineItem extends React.Component<{ years: string, title: ResumeItemTitle, text: string }, {}> {
+export class TimelineItem extends React.Component<{ years: string, title: ResumeItemTitle, text: string, images?: any[] }, {}> {
+  // todo: TimelineItem should render children, Resume should use Timeline which renders resumeItem
 
   render() {
     return (
@@ -16,6 +17,7 @@ export class TimelineItem extends React.Component<{ years: string, title: Resume
           <span>{ this.props.title.team }</span>
         </p>
         <p>{ this.props.text }</p>
+        { this.props.images && this.props.images.map(image => <img className={ styles.resumeIcon } src={ image }/>) }
       </div>
     );
   }
