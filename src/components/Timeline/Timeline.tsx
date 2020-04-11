@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as styles from './Timeline.scss';
 import { TimelineItem } from './TimelineItem/TimelineItem';
 
-export class Timeline extends React.Component<{ title: string, items: any }, {}> {
+export class Timeline extends React.Component<{ title: string, items: JSX.Element[] }, {}> {
   render() {
     return (
       <div className={ styles.timeline }>
