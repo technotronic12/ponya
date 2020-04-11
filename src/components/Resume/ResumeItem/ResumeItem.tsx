@@ -1,8 +1,8 @@
 import * as React from 'react';
 import * as styles from './ResumeItem.scss';
-import { IResumeItem } from '../ResumeData';
+import { IResumeDataItem } from '../ResumeData';
 
-export class ResumeItem extends React.Component<{ item: IResumeItem, right: boolean }, {}> {
+export class ResumeItem extends React.Component<{ item: IResumeDataItem, right: boolean }, {}> {
 
   render() {
     return (
@@ -12,12 +12,12 @@ export class ResumeItem extends React.Component<{ item: IResumeItem, right: bool
           <span className={ styles.company }>{ this.props.item.title.company }</span>
           <span> | </span>
           <span className={ styles.role }>{ this.props.item.title.role }</span>
-          <span> @ </span>
+          <span> { this.props.item.title.team ? '@' : '' } </span>
           <span>{ this.props.item.title.team }</span>
         </p>
         <p>{ this.props.item.text }</p>
         { this.props.item.images && this.props.item.images.map((image, index) =>
-          <img key={ index } className={ styles.resumeIcon } src={ image }/>) }
+          <img alt="nodejs js typescript scala developer" key={ index } className={ styles.resumeIcon } src={ image }/>) }
       </div>
     );
   }

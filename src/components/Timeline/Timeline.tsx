@@ -1,11 +1,8 @@
 import * as React from 'react';
 import * as styles from './Timeline.scss';
 import { TimelineItem } from './TimelineItem/TimelineItem';
-import { resumeItems } from '../Resume/ResumeData';
-import { ResumeItem } from '../Resume/ResumeItem/ResumeItem';
 
-
-export class Timeline extends React.Component<{ title: string }, {}> {
+export class Timeline extends React.Component<{ title: string, items: any }, {}> {
   render() {
     return (
       <div className={ styles.timeline }>
@@ -14,9 +11,9 @@ export class Timeline extends React.Component<{ title: string }, {}> {
         </div>
         <div className={ styles.main }>
           {
-            resumeItems.map((item, index) =>
+            this.props.items.map((item, index) =>
               <TimelineItem key={ index }>
-                <ResumeItem item={ item } right={ index % 2 === 0 }/>
+                { item }
               </TimelineItem>)
           }
         </div>

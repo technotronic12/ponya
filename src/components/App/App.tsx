@@ -6,8 +6,9 @@ import { Hero } from '../Hero/Hero';
 import { AppStore } from '../../models/AppStore';
 import { About } from '../About/About';
 import { DotLoader } from '../Loader/DotLoader';
-import { Timeline } from '../Timeline/Timeline';
 import { Divider } from '../Divider/Divider';
+import DevTools from 'mobx-react-devtools';
+import { Resume } from '../Resume/Resume';
 
 @observer
 export class App extends React.Component<{ appStore: AppStore }, {}> {
@@ -28,8 +29,8 @@ export class App extends React.Component<{ appStore: AppStore }, {}> {
         <Hero/>
         <About/>
         <Divider/>
-        <Timeline title={ 'Experience' }/>
-        {/*<DevTools/>*/ }
+        <Resume/>
+        <DevTools/>
       </div>
     );
   }

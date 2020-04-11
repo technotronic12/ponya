@@ -10,15 +10,14 @@ export interface IResumeItemTitle {
   team?: string;
 }
 
-export interface IResumeItem {
+export interface IResumeDataItem {
   years: string;
   title: IResumeItemTitle;
   text: string;
   images?: any[];
 }
 
-// todo: add technology tags to each item (node, scala, js, java)
-export const resumeItems: IResumeItem[] = [{
+export const resumeDataItems: IResumeDataItem[] = [{
   years: '2018-Present',
   title: { company: 'Wix.com', role: 'Full-stack developer', team: 'Fed infra group' },
   text: 'A member of the Core Services team, developing tools and services used by millions of Wix users around the world. Focused on improving application performance and stability.',
