@@ -1,6 +1,7 @@
 import * as React from 'react';
 import * as style from './DotLoader.scss';
 import { Dot } from './Dot/Dot';
+import Fader from '../Fader/Fader';
 
 export class DotLoader extends React.Component<{ isLoaded: () => boolean, dotColors: string[], transitionDuration: number }, { index: number }> {
 
@@ -28,7 +29,6 @@ export class DotLoader extends React.Component<{ isLoaded: () => boolean, dotCol
 
   render() {
     return (
-
       <Fader show={ !this.props.isLoaded() } transitionDuration={ this.props.transitionDuration } isFixed={ true } zIndex={ 1000 }>
         <div id={ style.wrapper }>
           { this.props.dotColors.map((color, id) => <Dot key={ id } color={ color } big={ this.state.index == id }/>) }

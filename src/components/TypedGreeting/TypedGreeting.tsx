@@ -2,16 +2,16 @@ import * as React from 'react';
 import Typist from 'react-typist';
 import * as style from './TypedGreeting.scss';
 
-export class TypedGreeting extends React.Component {
+export class TypedGreeting extends React.Component<{}, {}> {
 
-    render() {
-        const initialDelayInMs = 1500;
-        const delayInMs = 700;
-        const sentences = [
-            'Scala developer.',
-            'Javascript developer.',
-            'node developer.'
-        ];
+  render() {
+    const initialDelayInMs = 1500;
+    const delayInMs = 700;
+    const sentences = [
+      'Scala developer.',
+      'Javascript developer.',
+      'node developer.'
+    ];
 
         return (
           <div>
@@ -32,7 +32,8 @@ export class TypedGreeting extends React.Component {
                 <span className={ style.purple }>Fullstack developer</span>.
                 <Typist.Delay ms={ delayInMs }/>
                 <br/>
-                <span>Welcome to my space ⭐🚀🌕</span><br/>
+                <span>Welcome to my space 🚀</span>
+                <br/>
                 <span className={ style.comment }>(it's still under construction)</span>
               </Typist>
           </div>

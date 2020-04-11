@@ -24,7 +24,7 @@ export class App extends React.Component<{ appStore: AppStore }, {}> {
     return (
       <div className={ background }>
         {/*<CircleLoader isLoaded={this.props.appStore.appIsLoaded} transitionDuration={2000}/>*/ }
-        <DotLoader isLoaded={ this.props.appStore.appIsLoaded } dotColors={ ['#8c39fe', 'deeppink', 'white'] } transitionDuration={ 2000 }/>
+        <DotLoader isLoaded={ this.props.appStore.appIsLoaded } dotColors={ ['#8c39fe', 'deeppink', 'white'] } transitionDuration={ 1000 }/>
         <Menu/>
         <Hero/>
         <About/>
