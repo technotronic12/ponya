@@ -3,6 +3,7 @@ import * as jsImg from '../../assets/icons/javascript.png';
 import * as scalaImg from '../../assets/icons/scala.png';
 import * as angularImg from '../../assets/icons/angular.png';
 import * as phpImg from '../../assets/icons/php.png';
+import * as typescriptImg from '../../assets/icons/typescript.png';
 
 export interface IResumeItemTitle {
   company: string;
@@ -21,12 +22,12 @@ export const resumeItemsData: IResumeItemData[] = [{
   years: '2018-Present',
   title: { company: 'Wix.com', role: 'Full-stack developer', team: 'Fed infra group' },
   text: 'A member of the Core Services team, developing tools and services used by millions of Wix users around the world. Focused on improving application performance and stability.',
-  images: [nodeImg, jsImg],
+  images: [nodeImg, typescriptImg],
 }, {
   years: '2017-2018',
   title: { company: 'Wix.com', role: 'Development lead', team: 'Production operations team' },
   text: 'Improving stability, visibility and reducing downtime while allowing development velocity. Developing internal incident and alert management tools.',
-  images: [nodeImg, jsImg, scalaImg],
+  images: [nodeImg, typescriptImg, scalaImg],
 }, {
   years: '2014-2018',
   title: { company: 'Wix.com', role: 'Full-stack developer', team: 'Production operations team' },
