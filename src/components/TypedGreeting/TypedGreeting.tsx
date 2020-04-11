@@ -33,8 +33,6 @@ export class TypedGreeting extends React.Component<{}, {}> {
                 <Typist.Delay ms={ delayInMs }/>
                 <br/>
                 <span>Welcome to my space 🚀</span>
-                <br/>
-                <span className={ style.comment }>(it's still under construction)</span>
               </Typist>
           </div>
         );
