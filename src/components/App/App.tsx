@@ -7,7 +7,7 @@ import { AppStore } from '../../models/AppStore';
 import { About } from '../About/About';
 import { DotLoader } from '../Loader/DotLoader';
 import { Divider } from '../Divider/Divider';
-import DevTools from 'mobx-react-devtools';
+// import DevTools from 'mobx-react-devtools';
 import { Resume } from '../Resume/Resume';
 
 @observer
@@ -30,7 +30,7 @@ export class App extends React.Component<{ appStore: AppStore }, {}> {
         <About/>
         <Divider/>
         <Resume/>
-        <DevTools/>
+        {/*<DevTools/>*/ }
       </div>
     );
   }
