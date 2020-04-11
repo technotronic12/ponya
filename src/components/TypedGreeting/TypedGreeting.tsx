@@ -22,17 +22,18 @@ export class TypedGreeting extends React.Component {
                   {
                       sentences.map((sentence, index) => {
                           return (
-                            <span key={index}>
-                                <span>{sentence}</span>
-                                <Typist.Backspace count={sentence.length} delay={delayInMs}/>
+                            <span key={ index }>
+                                <span>{ sentence }</span>
+                                <Typist.Backspace count={ sentence.length } delay={ delayInMs }/>
                             </span>
                           )
                       })
                   }
-                  <span className={style.purple}>Fullstack developer</span>.
-              <Typist.Delay ms={delayInMs}/>
-              <br/>
-                <span>Welcome to my space ⭐🚀🌕</span>
+                <span className={ style.purple }>Fullstack developer</span>.
+                <Typist.Delay ms={ delayInMs }/>
+                <br/>
+                <span>Welcome to my space ⭐🚀🌕</span><br/>
+                <span className={ style.comment }>(it's still under construction)</span>
               </Typist>
           </div>
         );

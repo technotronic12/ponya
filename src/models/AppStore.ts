@@ -1,7 +1,7 @@
 import { action, observable } from 'mobx';
 
 export class AppStore {
-  @observable loaded: Boolean;
+  @observable loaded: boolean;
 
   @observable appIsLoaded = () => this.loaded;
   @action toggleLoaded = () => { this.loaded = !this.loaded };
