@@ -1,29 +1,5 @@
 @import "src/common-styles";
 
-.timeline-item-title {
-  font-weight: bold;
-}
-
-.years {
-  color: $purple;
-  text-align: right;
-  position: relative;
-  top: 8px;
-}
-
-.company {
-  color: $pink;
-}
-
-.role {
-  color: $purple;
-}
-
-.resume-icon {
-  height: 30px;
-  margin-right: 6px;
-}
-
 .timeline-item {
   font-size: 1em;
   line-height: 1.75em;
@@ -60,12 +36,6 @@
     left: 100%;
     margin-left: -20px;
   }
-
-  .years {
-    position: absolute;
-    right: -150px;
-    top: 46px;
-  }
 }
 
 //even number borders
@@ -76,12 +46,6 @@
   &:before {
     right: 100%;
     margin-right: -20px;
-  }
-
-  .years {
-    left: -150px;
-    position: absolute;
-    top: 46px
   }
 }
 

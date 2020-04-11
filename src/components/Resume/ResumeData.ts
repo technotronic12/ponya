@@ -4,21 +4,21 @@ import * as scalaImg from '../../../assets/icons/scala.png';
 import * as angularImg from '../../../assets/icons/angular.png';
 import * as phpImg from '../../../assets/icons/php.png';
 
-export interface ResumeItemTitle {
+export interface IResumeItemTitle {
   company: string;
   role: string;
   team?: string;
 }
 
-export interface ResumeItem {
+export interface IResumeItem {
   years: string;
-  title: ResumeItemTitle;
+  title: IResumeItemTitle;
   text: string;
   images?: any[];
 }
 
 // todo: add technology tags to each item (node, scala, js, java)
-export const resumeItems: ResumeItem[] = [{
+export const resumeItems: IResumeItem[] = [{
   years: '2018-Present',
   title: { company: 'Wix.com', role: 'Full-stack developer', team: 'Fed infra group' },
   text: 'A member of the Core Services team, developing tools and services used by millions of Wix users around the world. Focused on improving application performance and stability.',
