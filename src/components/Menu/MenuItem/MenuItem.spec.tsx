@@ -4,10 +4,9 @@ import { expect } from 'chai';
 // https://github.com/airbnb/enzyme/issues/1284
 // enzyme_adapter_react_16_1.default is not a constructor
 // TypeScript doesn't yet create synthetic default imports like Babel does
-import * as Enzyme from 'enzyme';
-import { mount } from 'enzyme';
+import Enzyme, { mount } from 'enzyme';
 import { MenuItem } from './MenuItem';
-import * as Adapter from 'enzyme-adapter-react-16';
+import Adapter from 'enzyme-adapter-react-16';
 
 Enzyme.configure({ adapter: new Adapter() });
 

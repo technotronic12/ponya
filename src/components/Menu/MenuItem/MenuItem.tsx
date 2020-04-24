@@ -1,5 +1,5 @@
 import React from 'react';
-import * as style from './MenuItem.scss';
+import style from './MenuItem.scss';
 
 export class MenuItem extends React.Component< { icon: string }, {}> {
 

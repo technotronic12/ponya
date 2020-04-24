@@ -1,6 +1,6 @@
 import React from 'react';
 import { observer } from 'mobx-react';
-import * as style from './Logo.scss';
+import style from './Logo.scss';
 
 @observer
 export class Logo extends React.Component<{}, {}> {

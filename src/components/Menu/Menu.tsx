@@ -4,8 +4,8 @@ import { observer } from 'mobx-react';
 import { menuStore } from '../../models/MenuStore';
 import { MenuButton } from './MenuButton/MenuButton';
 import { MenuItem } from './MenuItem/MenuItem';
-import * as style from './Menu.scss';
-import * as animations from '../../animation.scss';
+import style from './Menu.scss';
+import animations from '../../animation.scss';
 
 @observer
 export class Menu extends React.Component<{}, {}> {

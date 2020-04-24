@@ -1,17 +1,17 @@
 import React from 'react';
-import * as style from './About.scss';
-import * as profilePicture from '../../../assets/oizo.jpg';
+import style from './About.scss';
+import profilePicture from '../../../assets/oizo.jpg';
 
 export class About extends React.Component<{}, {}> {
   render() {
     return (
-      <div className={`${style.about}`}>
-        <div className={`${style.container}`}>
-          <div className={`${style.aboutTextTitle}`}>
+      <div className={ `${ style.about }` }>
+        <div className={ `${ style.container }` }>
+          <div className={ `${ style.aboutTextTitle }` }>
             About me
           </div>
-          <div className={`${style.aboutText}`}>
-            <div className={style.left}>
+          <div className={ `${ style.aboutText }` }>
+            <div className={ style.left }>
               <p>A Tel Aviv based fullstack developer. A husband and a father. A cat lover.</p>
               <p>Parenting and software developing by day, gaming and hacking by night.</p>
               <br/>

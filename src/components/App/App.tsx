@@ -9,7 +9,7 @@ import { DotLoader } from '../Loader/DotLoader';
 import { Divider } from '../Divider/Divider';
 // import DevTools from 'mobx-react-devtools';
 import { Resume } from '../Resume/Resume';
-import { Medium } from '../Medium/Medium';
+import { MediumPostPreviewContainer } from '../Medium/MediumPostPreviewContainer';
 
 @observer
 export class App extends React.Component<{ appStore: AppStore }, {}> {
@@ -31,7 +31,7 @@ export class App extends React.Component<{ appStore: AppStore }, {}> {
         <About/>
         <Divider/>
         <Resume/>
-        <Medium mediumRssFeed={ 'https://medium.com/feed/@technotronic12' }/>
+        <MediumPostPreviewContainer mediumRssFeed={ 'https://medium.com/feed/@technotronic12' }/>
         {/*<DevTools/>*/ }
       </div>
     );

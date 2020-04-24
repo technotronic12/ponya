@@ -1,5 +1,5 @@
 import React from 'react';
-import * as style from '../DotLoader.scss';
+import style from '../DotLoader.scss';
 
 export class Dot extends React.Component<{ color: String, big: Boolean }, {}> {
   render() {

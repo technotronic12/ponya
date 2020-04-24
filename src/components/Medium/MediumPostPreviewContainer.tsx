@@ -1,14 +1,15 @@
 import React from 'react';
 import axios from 'axios';
-import { MediumPost } from './MediumPost/MediumPost';
+import { MediumPostPreview } from './MediumPostPreview/MediumPostPreview';
+import { MediumAuthorMetadata, MediumPost } from './medium-typings';
 
-class Medium extends React.Component<{ mediumRssFeed: string }, { posts: any, metadata: any }> {
-
+class MediumPostPreviewContainer extends React.Component<{ mediumRssFeed: string }, { posts: MediumPost[], metadata: MediumAuthorMetadata }> {
   constructor() {
     super();
+
     this.state = {
-      posts: {},
-      metadata: {},
+      posts: [],
+      metadata: undefined,
     };
   }
 
@@ -23,9 +24,9 @@ class Medium extends React.Component<{ mediumRssFeed: string }, { posts: any, me
   render() {
     return (
       <div>
-        <MediumPost postData={ this.state.posts[0] }/>
+        { this.state.posts.map(post => <MediumPostPreview post={ post }/>) }
       </div>);
   }
 }
 
-export { Medium };
+export { MediumPostPreviewContainer };

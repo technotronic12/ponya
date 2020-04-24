@@ -1,5 +1,5 @@
 import React from 'react';
-import * as style from './Hero.scss';
+import style from './Hero.scss';
 import { TypedGreeting } from '../TypedGreeting/TypedGreeting';
 
 export class Hero extends React.Component<{}, {}> {

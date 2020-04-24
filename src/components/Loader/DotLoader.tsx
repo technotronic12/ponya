@@ -1,5 +1,5 @@
 import React from 'react';
-import * as style from './DotLoader.scss';
+import style from './DotLoader.scss';
 import { Dot } from './Dot/Dot';
 import Fader from '../Fader/Fader';
 

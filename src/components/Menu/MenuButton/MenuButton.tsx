@@ -1,5 +1,5 @@
 import React from 'react';
-import * as style from './MenuButton.scss';
+import style from './MenuButton.scss';
 
 // < {props}, {state}>
 export class MenuButton extends React.Component<{ onClick, isOpen }, {}> {

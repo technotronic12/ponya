@@ -1,9 +1,9 @@
-import * as nodeImg from '../../assets/icons/nodejsround.png';
-import * as jsImg from '../../assets/icons/javascript.png';
-import * as scalaImg from '../../assets/icons/scala.png';
-import * as angularImg from '../../assets/icons/angular.png';
-import * as phpImg from '../../assets/icons/php.png';
-import * as typescriptImg from '../../assets/icons/typescript.png';
+import nodeImg from '../../assets/icons/nodejsround.png';
+import jsImg from '../../assets/icons/javascript.png';
+import scalaImg from '../../assets/icons/scala.png';
+import angularImg from '../../assets/icons/angular.png';
+import phpImg from '../../assets/icons/php.png';
+import typescriptImg from '../../assets/icons/typescript.png';
 
 export interface IResumeItemTitle {
   company: string;
