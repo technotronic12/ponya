@@ -1,9 +1,14 @@
 $dark-grey: #1a1a1a;
 $timeline-grey: #34435E;
 $purple: #8c39fe;
-$pink: #d53a9d;
+$pink: deeppink;
 $white: #ffffff;
 $title-size: 44px;
-$text-size: 1.1em;
+$text-size: 1.1rem;
+$subtitle-size: 1.2rem;
 $font: "Roboto", "Helvetica", "Arial", sans-serif;
 $text-line-height: 1.5em;
+
+.section {
+  padding: 2.2rem 20px;
+}

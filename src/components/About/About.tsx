@@ -1,15 +1,15 @@
 import React from 'react';
 import style from './About.scss';
+import commonStyle from '../../common-styles.scss';
 import profilePicture from '../../../assets/oizo.jpg';
+import { SectionTitle } from '../SectionTitle/Title';
 
 export class About extends React.Component<{}, {}> {
   render() {
     return (
-      <div className={ `${ style.about }` }>
+      <div className={ `${ style.about }  ${ commonStyle.section }` }>
         <div className={ `${ style.container }` }>
-          <div className={ `${ style.aboutTextTitle }` }>
-            About me
-          </div>
+          <SectionTitle>About me </SectionTitle>
           <div className={ `${ style.aboutText }` }>
             <div className={ style.left }>
               <p>A Tel Aviv based fullstack developer. A husband and a father. A cat lover.</p>

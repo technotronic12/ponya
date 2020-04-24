@@ -1,3 +1,4 @@
+export const section: string;
 export const resumeItemTitle: string;
 export const years: string;
 export const right: string;

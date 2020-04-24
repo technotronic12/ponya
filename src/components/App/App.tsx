@@ -31,6 +31,7 @@ export class App extends React.Component<{ appStore: AppStore }, {}> {
         <About/>
         <Divider/>
         <Resume/>
+        <Divider/>
         <Medium/>
         {/*<DevTools/>*/ }
       </div>

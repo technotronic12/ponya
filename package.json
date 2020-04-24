@@ -68,7 +68,6 @@
     "webpack-merge": "^4.1.2"
   },
   "dependencies": {
-    "@material-ui/core": "^4.9.11",
     "axios": "^0.19.2",
     "express": "^4.16.2",
     "lodash-es": "^4.17.8",
