@@ -1,0 +1,30 @@
+@import "src/common-styles";
+
+.medium-post-preview {
+  width: 300px;
+  float: left;
+  margin: 0 10px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.medium-post-preview-item {
+  padding: 4px;
+  margin-bottom: 20px;
+}
+
+.medium-post-preview-title {
+  font-size: $text-size;
+  height: 60px;
+}
+
+.medium-post-preview-thumbnail {
+  //border: 2px solid $purple;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.medium-post-preview:nth-child(even) {
+  margin: 0 10px;
+}

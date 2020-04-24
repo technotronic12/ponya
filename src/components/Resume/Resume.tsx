@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Resume.scss';
+import style from './Resume.scss';
 import { Timeline } from '../Timeline/Timeline';
 import { ResumeItem } from './ResumeItem/ResumeItem';
 import { IResumeItemData, resumeItemsData } from '../../models/ResumeItemData';
@@ -14,7 +14,7 @@ export class Resume extends React.Component<{}, {}> {
     const resumeItems = this.resumeItemsToDomElements(resumeItemsData);
 
     return (
-      <div className={ styles.resume }>
+      <div className={ style.resume }>
         <Timeline title={ 'Experience' } items={ resumeItems }/>
       </div>
     );

@@ -1,9 +1,10 @@
 import React from 'react';
 import axios from 'axios';
-import { MediumPostPreview } from './MediumPostPreview/MediumPostPreview';
-import { MediumAuthorMetadata, MediumPost } from './medium-typings';
+import { MediumPostPreview } from '../MediumPostPreview/MediumPostPreview';
+import { IMediumAuthorMetadata, IMediumPost } from '../medium-typings';
+import style from './MediumPostPreviewContainer.scss';
 
-class MediumPostPreviewContainer extends React.Component<{ mediumRssFeed: string }, { posts: MediumPost[], metadata: MediumAuthorMetadata }> {
+class MediumPostPreviewContainer extends React.Component<{ mediumRssFeed: string }, { posts: IMediumPost[], metadata: IMediumAuthorMetadata }> {
   constructor() {
     super();
 
@@ -23,8 +24,8 @@ class MediumPostPreviewContainer extends React.Component<{ mediumRssFeed: string
 
   render() {
     return (
-      <div>
-        { this.state.posts.map(post => <MediumPostPreview post={ post }/>) }
+      <div className={ style.mediumPostPreviewContainer }>
+        { this.state.posts.map((post, index) => <MediumPostPreview key={ index } post={ post }/>) }
       </div>);
   }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
+import { IMediumPost } from '../medium-typings';
 
-class MediumPost extends React.Component<{ postData: any }, {}> {
+class MediumPost extends React.Component<{ postData: IMediumPost }, {}> {
   render() {
     return (
       <div>

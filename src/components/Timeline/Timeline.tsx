@@ -1,15 +1,15 @@
 import React from 'react';
-import styles from './Timeline.scss';
+import style from './Timeline.scss';
 import { TimelineItem } from './TimelineItem/TimelineItem';
 
 export class Timeline extends React.Component<{ title: string, items: JSX.Element[] }, {}> {
   render() {
     return (
-      <div className={ styles.timeline }>
-        <div className={ `${ styles.timelineTextTitle }` }>
+      <div className={ style.timeline }>
+        <div className={ `${ style.timelineTextTitle }` }>
           { this.props.title }
         </div>
-        <div className={ styles.main }>
+        <div className={ style.main }>
           {
             this.props.items.map((item, index) =>
               <TimelineItem key={ index }>

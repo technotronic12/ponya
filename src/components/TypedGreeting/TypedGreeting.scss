@@ -1,9 +1,11 @@
+@import "./src/common-styles";
+
 .greeting-name {
-	font-size: 44px;
+  font-size: $title-size;
 }
 
 .purple {
-	color: #8c39fe;
+  color: #8c39fe;
 }
 
 .comment {

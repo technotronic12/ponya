@@ -1,4 +1,4 @@
-export interface MediumPost {
+export interface IMediumPost {
   title: string
   pubDate: string
   link: string
@@ -11,7 +11,7 @@ export interface MediumPost {
   categories: string[]
 }
 
-export interface MediumAuthorMetadata {
+export interface IMediumAuthorMetadata {
   url: string
   title: string
   link: string

@@ -1,0 +1,13 @@
+@import "./src/common-styles";
+
+.medium-post-preview-container {
+  margin: 0 auto;
+  width: 1000px;
+  //background: #B7B6C2;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 60px 20px;
+}
