@@ -4,3 +4,5 @@ export const mediumPostPreviewItem: string;
 export const mediumPostPreviewTitle: string;
 export const mediumPostPreviewThumbnail: string;
 export const mediumPostPreviewContent: string;
+export const mediumPostPreviewFooter: string;
+export const mediumPostPreviewDescription: string;

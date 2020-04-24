@@ -7,6 +7,9 @@
   overflow: hidden;
   background-color: white;
   height: 380px;
+  border-radius: 4px;
+  display: flex;
+  flex-flow: column;
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
@@ -21,6 +24,21 @@
 .medium-post-preview-title {
   font-size: $subtitle-size;
   margin-bottom: 0.5em;
+  color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 2.2em;
+  -webkit-transition: max-height 1s;
+  -moz-transition: max-height 1s;
+  -ms-transition: max-height 1s;
+  -o-transition: max-height 1s;
+  transition: max-height 1s ease-out;
+}
+
+.medium-post-preview-title:hover {
+  background: white;
+  overflow: visible;
+  max-height: 100%;
 }
 
 .medium-post-preview-thumbnail {
@@ -32,4 +50,21 @@
 
 .medium-post-preview-content {
   padding: 16px;
+  color: $timeline-grey;
+  flex: 1;
+}
+
+.medium-post-preview-footer {
+  padding: 0 16px 16px 16px;
+  transition: all 1s;
+
+  div {
+    float: left;
+  }
+}
+
+.medium-post-preview-description {
+  max-height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
