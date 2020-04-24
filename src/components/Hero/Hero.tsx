@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import * as style from './Hero.scss';
 import { TypedGreeting } from '../TypedGreeting/TypedGreeting';
 

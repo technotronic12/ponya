@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import * as style from './About.scss';
 import * as profilePicture from '../../../assets/oizo.jpg';
 

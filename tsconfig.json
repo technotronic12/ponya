@@ -6,7 +6,10 @@
     "noImplicitAny": false,
     "sourceMap": true,
     "removeComments": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
     "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
     "noLib": false,
     "lib": [
       "dom",

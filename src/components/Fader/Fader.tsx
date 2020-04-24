@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { Transition } from 'react-transition-group';
 
 class Fader extends React.Component<{ transitionDuration: number, show: boolean, isFixed: boolean, zIndex?: number }, {}> {

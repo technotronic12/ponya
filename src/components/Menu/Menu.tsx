@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import map from 'lodash-es/map';
 import { observer } from 'mobx-react';
 import { menuStore } from '../../models/MenuStore';
@@ -8,17 +8,17 @@ import * as style from './Menu.scss';
 import * as animations from '../../animation.scss';
 
 @observer
-export class Menu extends React.Component {
+export class Menu extends React.Component<{}, {}> {
 
   static openCloseClass() {
-    const openStyle = `${animations.fadein} ${style.open}`;
-    const closedStyle = `${animations.fadeout} ${style.closed}`;
+    const openStyle = `${ animations.fadein } ${ style.open }`;
+    const closedStyle = `${ animations.fadeout } ${ style.closed }`;
     return menuStore.isOpen() ? openStyle : closedStyle;
   }
 
   render() {
     return (
-      <div className={`${style.menu}`}>
+      <div className={ `${ style.menu }` }>
         <MenuButton onClick={menuStore.toggleOpen} isOpen={menuStore.open}/>
         <div className={`${style.container} ${Menu.openCloseClass()}`}>
           {map(menuStore.getItems(), item => <MenuItem key={item.index} icon={item.icon}/>)}

@@ -1,11 +1,11 @@
-import * as React from 'react';
+import React from 'react';
 import * as style from './MenuItem.scss';
 
 export class MenuItem extends React.Component< { icon: string }, {}> {
 
   render() {
     return (
-      <img src={this.props.icon} className={`${style.icon}`}/>
+      <img alt={ 'Eli Ponyatovski Fullstack Developer menu item' } src={ this.props.icon } className={ `${ style.icon }` }/>
     );
   }
 }

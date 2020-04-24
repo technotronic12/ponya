@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import 'jsdom-global/register';
 import { expect } from 'chai';
 // https://github.com/airbnb/enzyme/issues/1284

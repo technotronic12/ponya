@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import * as styles from './Resume.scss';
 import { Timeline } from '../Timeline/Timeline';
 import { ResumeItem } from './ResumeItem/ResumeItem';

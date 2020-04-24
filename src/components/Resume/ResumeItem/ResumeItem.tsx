@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import * as styles from './ResumeItem.scss';
 import { IResumeItemData } from '../../../models/ResumeItemData';
 
