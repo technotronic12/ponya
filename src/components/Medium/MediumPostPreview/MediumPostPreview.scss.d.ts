@@ -6,3 +6,4 @@ export const mediumPostPreviewThumbnail: string;
 export const mediumPostPreviewContent: string;
 export const mediumPostPreviewFooter: string;
 export const mediumPostPreviewDescription: string;
+export const spaces: string;
