@@ -25,7 +25,7 @@ class MediumPostPreview extends React.Component<{ post: IMediumPost }, {}> {
     const shortDescription = this._getShortPostDescription(description);
 
     return (
-      <div className={ style.mediumPostPreview }>
+      <a className={ style.mediumPostPreview } href={ post.link } target={ '_blank' }>
         <img alt={ post.title } src={ post.thumbnail } className={ style.mediumPostPreviewThumbnail }/>
         <div className={ style.mediumPostPreviewContent }>
           <div className={ `${ style.mediumPostPreviewItem } ${ style.mediumPostPreviewTitle }` }>{ post.title }</div>
@@ -35,8 +35,9 @@ class MediumPostPreview extends React.Component<{ post: IMediumPost }, {}> {
           <div>{ formatToReadableDate(post.pubDate) }</div>
           <div className={ style.spaces }>|</div>
           <div>{ `${ readTimeMinutes } min read` }</div>
+          <div className={ style.hoverNote }>opens in a new tab</div>
         </div>
-      </div>
+      </a>
     );
   }
 }
