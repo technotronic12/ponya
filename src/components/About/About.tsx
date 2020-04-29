@@ -11,6 +11,9 @@ export class About extends React.Component<{}, {}> {
         <div className={ `${ style.container }` }>
           <SectionTitle>About me </SectionTitle>
           <div className={ `${ style.aboutText }` }>
+            <div className={ style.right }>
+              <img src={ profilePicture } className={ style.profile } alt={ 'yo' }/>
+            </div>
             <div className={ style.left }>
               <p>A Tel Aviv based fullstack developer. A husband and a father. A cat lover.</p>
               <p>Parenting and software developing by day, gaming and hacking by night.</p>
@@ -21,9 +24,6 @@ export class About extends React.Component<{}, {}> {
               <p>Currently building tools that are used by millions of users.</p>
               <br/>
               <p>Don't be shy to say "Hi!"</p>
-            </div>
-            <div className={style.right}>
-              <img src={profilePicture} className={style.profile} alt={'yo'}/>
             </div>
           </div>
         </div>
