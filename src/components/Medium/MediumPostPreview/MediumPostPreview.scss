@@ -23,7 +23,7 @@
   }
 }
 
-.medium-post-preview:nth-child(2n-1) {
+.medium-post-preview {
   margin-bottom: 40px;
 }
 
@@ -82,4 +82,10 @@
   color: $purple;
   opacity: 0.001;
   transition: visibility 0.5s, opacity 0.5s ease;
+}
+
+@media all and (min-width: 600px) {
+  .medium-post-preview:nth-child(2n-1) {
+    margin-bottom: 40px;
+  }
 }
