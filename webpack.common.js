@@ -29,21 +29,22 @@ module.exports = {
         exclude: /node_modules/
       }, {
         test: /\.(scss|css)$/,
-        use: [
-          {
-            loader: 'style-loader'
-          }, {
-            loader: 'typings-for-css-modules-loader',
-            options: {
-              modules: true,
-              camelCase: true,
-              namedExport: true,
-              localIdentName: '[path][name]__[local]',
-            }
-          }, {
-            loader: 'sass-loader' // compiles Sass to CSS
-          }
-        ]
+        use: [{
+          loader: 'style-loader'
+        }, {
+          loader: 'css-loader',
+          options: {
+            sourceMap: true,
+            modules: {
+              exportLocalsConvention: 'camelCaseOnly',
+            },
+          },
+        }, {
+          loader: 'sass-loader',
+          options: {
+            sourceMap: true,
+          },
+        }]
       }, {
         test: /\.(jpe?g|png)$/i,
         use: [
