@@ -37,7 +37,8 @@ module.exports = {
             options: {
               modules: true,
               camelCase: true,
-              namedExport: true
+              namedExport: true,
+              localIdentName: '[path][name]__[local]',
             }
           }, {
             loader: 'sass-loader' // compiles Sass to CSS

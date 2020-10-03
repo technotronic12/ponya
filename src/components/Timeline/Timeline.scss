@@ -1,11 +1,28 @@
 @import "src/common-styles";
 
 .timeline {
-  width: 100%;
+  display: flex;
+  width: 88%;
+  text-align: center;
+  margin: 0 auto 30px auto;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .main {
-  min-width: 300px;
-  max-width: 630px;
+  //  min-width: 300px;
+  //  max-width: 630px;
   margin: auto;
+}
+
+@media all and (min-width: 600px) {
+  .timeline {
+    width: 100%;
+  }
+
+  .main {
+    min-width: 300px;
+    max-width: 630px;
+    margin: auto;
+  }
 }
