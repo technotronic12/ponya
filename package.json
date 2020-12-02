@@ -52,12 +52,13 @@
 		"ignore-styles": "^5.0.1",
 		"jsdom": "11.5.1",
 		"jsdom-global": "3.0.2",
-		"lint-staged": "^10.5.2",
 		"mocha": "^4.0.1",
 		"mocha-loader": "^1.1.1",
 		"node-sass": "^4.14.1",
 		"prettier": "2.2.1",
 		"sass-loader": "^10.0.2",
+		"sinon": "^9.2.1",
+		"sinon-chai": "^3.5.0",
 		"style-loader": "^1.2.1",
 		"ts-loader": "^4.2.0",
 		"typed-css-modules": "^0.3.0",
@@ -87,13 +88,5 @@
 		"reading-time": "^1.2.0",
 		"tslint": "^5.7.0",
 		"webp-loader": "latest"
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged"
-		}
-	},
-	"lint-staged": {
-		"**/*": "prettier --write --ignore-unknown"
 	}
 }

@@ -1,10 +1,11 @@
-import proton, { IEmail } from 'protonmail-api'
+import proton, { IEmail, IProtonMailClient } from 'protonmail-api'
+import { username } from './constants'
 
-const sendEmail = async (email: IEmail) => {
+export const sendEmail = async (email: IEmail) => {
 	const pw = process.env.PROTONMAIL_PW
 
-	const protonMail = await proton.connect({
-		username: 'eli@ponya.space',
+	const protonMail: IProtonMailClient = await proton.connect({
+		username,
 		password: pw,
 	})
 
