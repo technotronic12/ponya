@@ -1,4 +1,4 @@
-@import "src/common-styles";
+@import 'src/common-styles';
 
 .medium-post-preview {
   width: 400px;
@@ -10,7 +10,8 @@
   border-radius: 4px;
   display: flex;
   flex-flow: column;
-  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   cursor: pointer;
   text-decoration: none;
 }
@@ -54,7 +55,7 @@
 
 .medium-post-preview-footer {
   padding: 0 16px 16px 16px;
-  color: #34435E;
+  color: #34435e;
   font-size: 0.9rem;
 
   div {

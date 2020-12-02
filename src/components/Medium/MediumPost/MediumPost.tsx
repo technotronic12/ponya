@@ -1,5 +1,5 @@
-import React from 'react';
-import { IMediumPost } from '../medium-typings';
+import React from 'react'
+import { IMediumPost } from '../medium-typings'
 
 class MediumPost extends React.Component<{ postData: IMediumPost }, {}> {
   render() {
@@ -10,8 +10,8 @@ class MediumPost extends React.Component<{ postData: IMediumPost }, {}> {
         <div>Section</div>
         <div>Section</div>
       </div>
-    );
+    )
   }
 }
 
-export { MediumPost };
+export { MediumPost }

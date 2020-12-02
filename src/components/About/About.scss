@@ -1,4 +1,4 @@
-@import "src/common-styles";
+@import 'src/common-styles';
 
 .about {
   background: white;
@@ -23,7 +23,8 @@
   flex-wrap: wrap;
 }
 
-.left, .right {
+.left,
+.right {
   float: none;
   padding: 10px;
   width: auto;

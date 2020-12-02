@@ -11,15 +11,9 @@
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
     "noLib": false,
-    "lib": [
-      "dom",
-      "es6"
-    ],
+    "lib": ["dom", "es6"],
     "jsx": "react",
     "outDir": "dist/src"
   },
-  "exclude": [
-    "node_modules",
-    "static"
-  ]
+  "exclude": ["node_modules", "static"]
 }
