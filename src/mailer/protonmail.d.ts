@@ -1,20 +1,20 @@
 declare module 'protonmail-api' {
-  export function connect(
-    credentials: IProtonMailCredentials,
-  ): IProtonMailClient
+	export function connect(
+		credentials: IProtonMailCredentials,
+	): IProtonMailClient
 
-  export interface IEmail {
-    to: string
-    subject: string
-    body: string
-  }
+	export interface IEmail {
+		to: string
+		subject: string
+		body: string
+	}
 
-  export interface IProtonMailClient {
-    sendEmail(email: IEmail): void
-  }
+	export interface IProtonMailClient {
+		sendEmail(email: IEmail): void
+	}
 
-  export interface IProtonMailCredentials {
-    username: string
-    password: string
-  }
+	export interface IProtonMailCredentials {
+		username: string
+		password: string
+	}
 }

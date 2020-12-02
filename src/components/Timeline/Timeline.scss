@@ -1,28 +1,28 @@
 @import 'src/common-styles';
 
 .timeline {
-  display: flex;
-  width: 88%;
-  text-align: center;
-  margin: 0 auto 30px auto;
-  flex-wrap: wrap;
-  justify-content: center;
+	display: flex;
+	width: 88%;
+	text-align: center;
+	margin: 0 auto 30px auto;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .main {
-  //  min-width: 300px;
-  //  max-width: 630px;
-  margin: auto;
+	//  min-width: 300px;
+	//  max-width: 630px;
+	margin: auto;
 }
 
 @media all and (min-width: 600px) {
-  .timeline {
-    width: 100%;
-  }
+	.timeline {
+		width: 100%;
+	}
 
-  .main {
-    min-width: 300px;
-    max-width: 630px;
-    margin: auto;
-  }
+	.main {
+		min-width: 300px;
+		max-width: 630px;
+		margin: auto;
+	}
 }

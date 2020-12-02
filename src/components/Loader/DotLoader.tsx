@@ -4,44 +4,44 @@ import { Dot } from './Dot/Dot'
 import Fader from '../Fader/Fader'
 
 export class DotLoader extends React.Component<
-  { isLoaded: () => boolean; dotColors: string[]; transitionDuration: number },
-  { index: number }
+	{ isLoaded: () => boolean; dotColors: string[]; transitionDuration: number },
+	{ index: number }
 > {
-  interval
-  dotAnimationTime = 500
+	interval
+	dotAnimationTime = 500
 
-  constructor() {
-    super()
-    this.state = { index: 0 }
-  }
+	constructor() {
+		super()
+		this.state = { index: 0 }
+	}
 
-  componentWillMount() {
-    this.interval = setInterval(() => {
-      this.setState({ index: this.animateDotIndex() })
-    }, this.dotAnimationTime)
-  }
+	componentWillMount() {
+		this.interval = setInterval(() => {
+			this.setState({ index: this.animateDotIndex() })
+		}, this.dotAnimationTime)
+	}
 
-  componentWillUnmount() {
-    clearInterval(this.interval)
-  }
+	componentWillUnmount() {
+		clearInterval(this.interval)
+	}
 
-  private animateDotIndex() {
-    return (this.state.index + 1) % this.props.dotColors.length
-  }
+	private animateDotIndex() {
+		return (this.state.index + 1) % this.props.dotColors.length
+	}
 
-  render() {
-    return (
-      <Fader
-        show={!this.props.isLoaded()}
-        transitionDuration={this.props.transitionDuration}
-        isFixed={true}
-        zIndex={1000}>
-        <div id={style.wrapper}>
-          {this.props.dotColors.map((color, id) => (
-            <Dot key={id} color={color} big={this.state.index == id} />
-          ))}
-        </div>
-      </Fader>
-    )
-  }
+	render() {
+		return (
+			<Fader
+				show={!this.props.isLoaded()}
+				transitionDuration={this.props.transitionDuration}
+				isFixed={true}
+				zIndex={1000}>
+				<div id={style.wrapper}>
+					{this.props.dotColors.map((color, id) => (
+						<Dot key={id} color={color} big={this.state.index == id} />
+					))}
+				</div>
+			</Fader>
+		)
+	}
 }

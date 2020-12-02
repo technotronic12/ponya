@@ -1,99 +1,99 @@
 {
-  "name": "ponya",
-  "version": "1.0.0",
-  "description": "Ponya.space - Eli's travel trough space",
-  "scripts": {
-    "start": "node server.js",
-    "local": "webpack-dev-server --config ./webpack.dev.js",
-    "build": "webpack --config webpack.prod.js",
-    "build-local": "webpack --config webpack.dev.js",
-    "test": "tsc && mocha dist/**/*.spec.js --reporter spec --require ignore-styles",
-    "watch": "tsc && mocha dist/**/*.spec.js --reporter spec --watch --require ignore-styles"
-  },
-  "engines": {
-    "node": "12.16.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/technotronic12/ponya.git"
-  },
-  "keywords": [
-    "react",
-    "reactjs",
-    "mobx",
-    "eli"
-  ],
-  "author": "Eli Ponyatvoski <eliponyatovski@hotmail.com> (http://github.com/technotronic12)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/technotronic12/ponya"
-  },
-  "homepage": "http://ponya.space",
-  "devDependencies": {
-    "@types/history": "^4.7.8",
-    "@types/lodash-es": "^4.17.0",
-    "@types/mocha": "^2.2.45",
-    "@types/react": "^15.6.29",
-    "@types/react-dom": "^15.5.12",
-    "@types/react-transition-group": "^4.4.0",
-    "@types/react-vertical-timeline-component": "^2.6.0",
-    "babel-cli": "^6.26.0",
-    "babel-preset-es2016": "^6.24.1",
-    "chai": "^4.1.2",
-    "clean-webpack-plugin": "^0.1.17",
-    "compression-webpack-plugin": "^1.1.11",
-    "copy-webpack-plugin": "^4.5.1",
-    "css-loader": "^4.3.0",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.15.5",
-    "file-loader": "^1.1.6",
-    "html-webpack-plugin": "^3.2.0",
-    "husky": "^4.3.0",
-    "ignore-styles": "^5.0.1",
-    "jsdom": "11.5.1",
-    "jsdom-global": "3.0.2",
-    "lint-staged": "^10.5.2",
-    "mocha": "^4.0.1",
-    "mocha-loader": "^1.1.1",
-    "node-sass": "^4.14.1",
-    "prettier": "2.2.1",
-    "sass-loader": "^10.0.2",
-    "style-loader": "^1.2.1",
-    "ts-loader": "^4.2.0",
-    "typed-css-modules": "^0.3.0",
-    "typescript": "^3.9.7",
-    "typings-for-css-modules-loader": "^1.7.0",
-    "uglifyjs-webpack-plugin": "^2.2.0",
-    "webpack": "^4.44.2",
-    "webpack-bundle-analyzer": "^2.11.1",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0",
-    "webpack-merge": "^4.1.2"
-  },
-  "dependencies": {
-    "axios": "^0.19.2",
-    "express": "^4.16.2",
-    "lodash-es": "^4.17.8",
-    "mobx": "^3.4.1",
-    "mobx-react": "^4.2.2",
-    "mobx-react-devtools": "^4.2.15",
-    "prop-types": "^15.6.0",
-    "protonmail-api": "^2.1.0",
-    "react": "^16.3.1",
-    "react-dom": "^16.3.1",
-    "react-router": "^4.2.0",
-    "react-transition-group": "^2.2.1",
-    "react-typist": "^2.0.4",
-    "reading-time": "^1.2.0",
-    "tslint": "^5.7.0",
-    "webp-loader": "latest"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
-  }
+	"name": "ponya",
+	"version": "1.0.0",
+	"description": "Ponya.space - Eli's travel trough space",
+	"scripts": {
+		"start": "node server.js",
+		"local": "webpack-dev-server --config ./webpack.dev.js",
+		"build": "webpack --config webpack.prod.js",
+		"build-local": "webpack --config webpack.dev.js",
+		"test": "tsc && mocha dist/**/*.spec.js --reporter spec --require ignore-styles",
+		"watch": "tsc && mocha dist/**/*.spec.js --reporter spec --watch --require ignore-styles"
+	},
+	"engines": {
+		"node": "12.16.1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/technotronic12/ponya.git"
+	},
+	"keywords": [
+		"react",
+		"reactjs",
+		"mobx",
+		"eli"
+	],
+	"author": "Eli Ponyatvoski <eliponyatovski@hotmail.com> (http://github.com/technotronic12)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/technotronic12/ponya"
+	},
+	"homepage": "http://ponya.space",
+	"devDependencies": {
+		"@types/history": "^4.7.8",
+		"@types/lodash-es": "^4.17.0",
+		"@types/mocha": "^2.2.45",
+		"@types/react": "^15.6.29",
+		"@types/react-dom": "^15.5.12",
+		"@types/react-transition-group": "^4.4.0",
+		"@types/react-vertical-timeline-component": "^2.6.0",
+		"babel-cli": "^6.26.0",
+		"babel-preset-es2016": "^6.24.1",
+		"chai": "^4.1.2",
+		"clean-webpack-plugin": "^0.1.17",
+		"compression-webpack-plugin": "^1.1.11",
+		"copy-webpack-plugin": "^4.5.1",
+		"css-loader": "^4.3.0",
+		"enzyme": "^3.3.0",
+		"enzyme-adapter-react-16": "^1.15.5",
+		"file-loader": "^1.1.6",
+		"html-webpack-plugin": "^3.2.0",
+		"husky": "^4.3.0",
+		"ignore-styles": "^5.0.1",
+		"jsdom": "11.5.1",
+		"jsdom-global": "3.0.2",
+		"lint-staged": "^10.5.2",
+		"mocha": "^4.0.1",
+		"mocha-loader": "^1.1.1",
+		"node-sass": "^4.14.1",
+		"prettier": "2.2.1",
+		"sass-loader": "^10.0.2",
+		"style-loader": "^1.2.1",
+		"ts-loader": "^4.2.0",
+		"typed-css-modules": "^0.3.0",
+		"typescript": "^3.9.7",
+		"typings-for-css-modules-loader": "^1.7.0",
+		"uglifyjs-webpack-plugin": "^2.2.0",
+		"webpack": "^4.44.2",
+		"webpack-bundle-analyzer": "^2.11.1",
+		"webpack-cli": "^3.3.12",
+		"webpack-dev-server": "^3.11.0",
+		"webpack-merge": "^4.1.2"
+	},
+	"dependencies": {
+		"axios": "^0.19.2",
+		"express": "^4.16.2",
+		"lodash-es": "^4.17.8",
+		"mobx": "^3.4.1",
+		"mobx-react": "^4.2.2",
+		"mobx-react-devtools": "^4.2.15",
+		"prop-types": "^15.6.0",
+		"protonmail-api": "^2.1.0",
+		"react": "^16.3.1",
+		"react-dom": "^16.3.1",
+		"react-router": "^4.2.0",
+		"react-transition-group": "^2.2.1",
+		"react-typist": "^2.0.4",
+		"reading-time": "^1.2.0",
+		"tslint": "^5.7.0",
+		"webp-loader": "latest"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"**/*": "prettier --write --ignore-unknown"
+	}
 }

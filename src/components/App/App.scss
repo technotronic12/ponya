@@ -1,28 +1,28 @@
 @import 'src/common-styles';
 
 .background {
-  min-height: 100%;
-  width: 100%;
-  height: auto;
+	min-height: 100%;
+	width: 100%;
+	height: auto;
 }
 
 :global(.Typist .Cursor) {
-  display: inline-block;
+	display: inline-block;
 }
 
 :global(.Typist .Cursor--blinking) {
-  opacity: 1;
-  animation: blink 1s linear infinite;
+	opacity: 1;
+	animation: blink 1s linear infinite;
 }
 
 @keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }

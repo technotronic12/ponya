@@ -2,140 +2,140 @@ $fade-time: 0.5s;
 $white: #fff;
 
 .slidein {
-  animation-name: slidein;
-  -webkit-animation-name: slidein;
-  animation-duration: 2s;
-  -webkit-animation-duration: 2s;
-  animation-timing-function: ease;
-  -webkit-animation-timing-function: ease;
-  visibility: visible !important;
+	animation-name: slidein;
+	-webkit-animation-name: slidein;
+	animation-duration: 2s;
+	-webkit-animation-duration: 2s;
+	animation-timing-function: ease;
+	-webkit-animation-timing-function: ease;
+	visibility: visible !important;
 }
 
 @keyframes slidein {
-  0% {
-    transform: translateY(-100%);
-  }
-  50% {
-    transform: translateY(8%);
-  }
-  65% {
-    transform: translateY(-4%);
-  }
-  80% {
-    transform: translateY(4%);
-  }
-  95% {
-    transform: translateY(-2%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
+	0% {
+		transform: translateY(-100%);
+	}
+	50% {
+		transform: translateY(8%);
+	}
+	65% {
+		transform: translateY(-4%);
+	}
+	80% {
+		transform: translateY(4%);
+	}
+	95% {
+		transform: translateY(-2%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
 }
 
 @-webkit-keyframes slidein {
-  0% {
-    -webkit-transform: translateY(-100%);
-  }
-  50% {
-    -webkit-transform: translateY(8%);
-  }
-  65% {
-    -webkit-transform: translateY(-4%);
-  }
-  80% {
-    -webkit-transform: translateY(4%);
-  }
-  95% {
-    -webkit-transform: translateY(0%);
-  }
-  100% {
-    -webkit-transform: translateY(0%);
-  }
+	0% {
+		-webkit-transform: translateY(-100%);
+	}
+	50% {
+		-webkit-transform: translateY(8%);
+	}
+	65% {
+		-webkit-transform: translateY(-4%);
+	}
+	80% {
+		-webkit-transform: translateY(4%);
+	}
+	95% {
+		-webkit-transform: translateY(0%);
+	}
+	100% {
+		-webkit-transform: translateY(0%);
+	}
 }
 
 .fadein {
-  -webkit-animation: fadein $fade-time; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein $fade-time; /* Firefox < 16 */
-  -ms-animation: fadein $fade-time; /* Internet Explorer */
-  -o-animation: fadein $fade-time; /* Opera < 12.1 */
-  animation: fadein $fade-time;
+	-webkit-animation: fadein $fade-time; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein $fade-time; /* Firefox < 16 */
+	-ms-animation: fadein $fade-time; /* Internet Explorer */
+	-o-animation: fadein $fade-time; /* Opera < 12.1 */
+	animation: fadein $fade-time;
 }
 
 @keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 @-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 .fadeout {
-  -webkit-animation: fadeout $fade-time; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeout $fade-time; /* Firefox < 16 */
-  -ms-animation: fadeout $fade-time; /* Internet Explorer */
-  -o-animation: fadeout $fade-time; /* Opera < 12.1 */
-  animation: fadeout $fade-time;
+	-webkit-animation: fadeout $fade-time; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadeout $fade-time; /* Firefox < 16 */
+	-ms-animation: fadeout $fade-time; /* Internet Explorer */
+	-o-animation: fadeout $fade-time; /* Opera < 12.1 */
+	animation: fadeout $fade-time;
 }
 
 @keyframes fadeout {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
 }
 
 @-webkit-keyframes fadeout {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
 }
 
 @keyframes strike {
-  0% {
-    width: 0;
-    opacity: 0;
-  }
-  1% {
-    opacity: 1;
-  }
-  100% {
-    width: 100%;
-    opacity: 1;
-  }
+	0% {
+		width: 0;
+		opacity: 0;
+	}
+	1% {
+		opacity: 1;
+	}
+	100% {
+		width: 100%;
+		opacity: 1;
+	}
 }
 
 .strike {
-  position: relative;
+	position: relative;
 }
 
 .strike:after {
-  content: ' ';
-  position: absolute;
-  top: 50%;
-  left: 0;
-  opacity: 0;
-  width: 100%;
-  height: 2px;
-  background: $white;
-  animation-name: strike;
-  animation-delay: 2s;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+	content: ' ';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	opacity: 0;
+	width: 100%;
+	height: 2px;
+	background: $white;
+	animation-name: strike;
+	animation-delay: 2s;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 }

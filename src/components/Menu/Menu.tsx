@@ -9,22 +9,22 @@ import animations from '../../animation.scss'
 
 @observer
 export class Menu extends React.Component<{}, {}> {
-  static openCloseClass() {
-    const openStyle = `${animations.fadein} ${style.open}`
-    const closedStyle = `${animations.fadeout} ${style.closed}`
-    return menuStore.isOpen() ? openStyle : closedStyle
-  }
+	static openCloseClass() {
+		const openStyle = `${animations.fadein} ${style.open}`
+		const closedStyle = `${animations.fadeout} ${style.closed}`
+		return menuStore.isOpen() ? openStyle : closedStyle
+	}
 
-  render() {
-    return (
-      <div className={`${style.menu}`}>
-        <MenuButton onClick={menuStore.toggleOpen} isOpen={menuStore.open} />
-        <div className={`${style.container} ${Menu.openCloseClass()}`}>
-          {map(menuStore.getItems(), (item) => (
-            <MenuItem key={item.index} icon={item.icon} />
-          ))}
-        </div>
-      </div>
-    )
-  }
+	render() {
+		return (
+			<div className={`${style.menu}`}>
+				<MenuButton onClick={menuStore.toggleOpen} isOpen={menuStore.open} />
+				<div className={`${style.container} ${Menu.openCloseClass()}`}>
+					{map(menuStore.getItems(), (item) => (
+						<MenuItem key={item.index} icon={item.icon} />
+					))}
+				</div>
+			</div>
+		)
+	}
 }

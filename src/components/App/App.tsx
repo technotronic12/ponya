@@ -13,32 +13,32 @@ import { Medium } from '../Medium/Medium'
 
 @observer
 export class App extends React.Component<{ appStore: AppStore }, {}> {
-  constructor() {
-    super()
-  }
+	constructor() {
+		super()
+	}
 
-  componentDidMount() {
-    this.props.appStore.toggleLoaded()
-  }
+	componentDidMount() {
+		this.props.appStore.toggleLoaded()
+	}
 
-  render() {
-    return (
-      <div className={background}>
-        {/*<CircleLoader isLoaded={this.props.appStore.appIsLoaded} transitionDuration={2000}/>*/}
-        <DotLoader
-          isLoaded={this.props.appStore.appIsLoaded}
-          dotColors={['#8c39fe', 'deeppink', 'white']}
-          transitionDuration={1000}
-        />
-        <Menu />
-        <Hero />
-        <About />
-        <Divider />
-        <Resume />
-        <Divider />
-        <Medium />
-        {/*<DevTools/>*/}
-      </div>
-    )
-  }
+	render() {
+		return (
+			<div className={background}>
+				{/*<CircleLoader isLoaded={this.props.appStore.appIsLoaded} transitionDuration={2000}/>*/}
+				<DotLoader
+					isLoaded={this.props.appStore.appIsLoaded}
+					dotColors={['#8c39fe', 'deeppink', 'white']}
+					transitionDuration={1000}
+				/>
+				<Menu />
+				<Hero />
+				<About />
+				<Divider />
+				<Resume />
+				<Divider />
+				<Medium />
+				{/*<DevTools/>*/}
+			</div>
+		)
+	}
 }
