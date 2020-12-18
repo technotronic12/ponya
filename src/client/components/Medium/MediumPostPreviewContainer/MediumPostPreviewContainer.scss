@@ -1,0 +1,10 @@
+@import 'src/client/common-styles';
+
+.medium-post-preview-container {
+	margin: 0 auto;
+	width: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}

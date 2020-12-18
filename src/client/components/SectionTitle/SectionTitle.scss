@@ -1,0 +1,9 @@
+@import 'src/client/common-styles';
+
+.section-title {
+	font-size: $title-size;
+	color: $purple;
+	margin-bottom: 2rem;
+	text-align: center;
+	width: 100%;
+}
