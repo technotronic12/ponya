@@ -8,7 +8,8 @@
 		"build": "webpack --config webpack.prod.js",
 		"build-local": "webpack --config webpack.dev.js",
 		"test": "ts-mocha -r ignore-styles -p tsconfig.json src/**/*.spec.{ts,tsx}",
-		"watch": "tsc && mocha dist/**/*.spec.js --reporter spec --watch --require ignore-styles"
+		"watch": "tsc && mocha dist/**/*.spec.js --reporter spec --watch --require ignore-styles",
+		"tsc": "tsc"
 	},
 	"engines": {
 		"node": "12.16.1"
