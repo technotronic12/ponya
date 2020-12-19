@@ -10,6 +10,7 @@ import { Divider } from '../Divider/Divider'
 // import DevTools from 'mobx-react-devtools';
 import { Resume } from '../Resume/Resume'
 import { Medium } from '../Medium/Medium'
+import { aboutDataItem, blogDataItem } from '../../models/MenuItemData'
 
 @observer
 export class App extends React.Component<{ appStore: AppStore }, {}> {
@@ -32,11 +33,11 @@ export class App extends React.Component<{ appStore: AppStore }, {}> {
 				/>
 				<Menu />
 				<Hero />
-				<About />
+				<About elementId={aboutDataItem.elementId}/>
 				<Divider />
 				<Resume />
 				<Divider />
-				<Medium />
+				<Medium elementId={blogDataItem.elementId}/>
 				{/*<DevTools/>*/}
 			</div>
 		)

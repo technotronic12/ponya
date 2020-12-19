@@ -4,10 +4,10 @@ import commonStyle from '../../common-styles.scss'
 import profilePicture from '../../../../assets/oizo.jpg'
 import { SectionTitle } from '../SectionTitle/Title'
 
-export class About extends React.Component<{}, {}> {
+export class About extends React.Component<{ elementId: string }, {}> {
 	render() {
 		return (
-			<div className={`${style.about}  ${commonStyle.section}`}>
+			<div id={this.props.elementId} className={`${style.about}  ${commonStyle.section}`}>
 				<div className={`${style.container}`}>
 					<SectionTitle>About me </SectionTitle>
 					<div className={`${style.aboutText}`}>

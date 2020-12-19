@@ -20,9 +20,9 @@ export class Menu extends React.Component<{}, {}> {
 			<div className={`${style.menu}`}>
 				<MenuButton onClick={menuStore.toggleOpen} isOpen={menuStore.open} />
 				<div className={`${style.container} ${Menu.openCloseClass()}`}>
-					{map(menuStore.getItems(), (item) => (
-						<MenuItem key={item.index} icon={item.icon} />
-					))}
+					{map(menuStore.getItems(), (item) =>
+						<MenuItem key={item.index} icon={item.icon} elementId={`#${item.elementId}`} />
+					)}
 				</div>
 			</div>
 		)
