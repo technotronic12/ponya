@@ -27,7 +27,6 @@ module.exports = merge(common, {
 	plugins: [
 		new CleanWebpackPlugin(['dist']),
 		new webpack.WatchIgnorePlugin([/\.js$/, /\.d\.ts$/]),
-		CopyWebpackPlugin([{ from: 'src/**/*.scss' }]),
 		new HtmlWebpackPlugin({
 			inject: true,
 			template: resolveAppPath('index.html'),

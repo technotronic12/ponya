@@ -15,7 +15,7 @@
       "es6"
     ],
     "jsx": "react",
-    "outDir": "dist/src"
+    "outDir": "dist"
   },
   "exclude": [
     "node_modules",

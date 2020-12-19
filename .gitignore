@@ -13,3 +13,5 @@ assets/me3.jpg
 package-lock.json
 dist/
 *1.png
+server.js
+server.js.map

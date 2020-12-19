@@ -3,10 +3,10 @@
 	"version": "1.0.0",
 	"description": "Ponya.space - Eli's travel trough space",
 	"scripts": {
-		"start": "tsc && node dist/src/server.js",
+		"start": "node server.js",
 		"local": "webpack-dev-server --config ./webpack.dev.js",
-		"build": "webpack --config webpack.prod.js",
-		"build-local": "webpack --config webpack.dev.js",
+		"build": "webpack --config webpack.prod.js && npm run tsc",
+		"build-local": "webpack --config webpack.dev.js && npm run tsc",
 		"test": "ts-mocha -r ignore-styles -p tsconfig.json src/**/*.spec.{ts,tsx}",
 		"watch": "tsc && mocha dist/**/*.spec.js --reporter spec --watch --require ignore-styles",
 		"tsc": "tsc"
