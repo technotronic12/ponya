@@ -3,7 +3,7 @@ const CompressionPlugin = require('compression-webpack-plugin')
 
 module.exports = {
 	entry: {
-		app: './src/index',
+		app: './src/client/index',
 	},
 	output: {
 		path: path.join(__dirname, 'dist'),

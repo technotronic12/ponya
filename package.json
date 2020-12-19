@@ -7,7 +7,7 @@
 		"local": "webpack-dev-server --config ./webpack.dev.js",
 		"build": "webpack --config webpack.prod.js",
 		"build-local": "webpack --config webpack.dev.js",
-		"test": "tsc && mocha dist/**/*.spec.js --reporter spec --require ignore-styles",
+		"test": "ts-mocha -r ignore-styles -p tsconfig.json src/**/*.spec.{ts,tsx}",
 		"watch": "tsc && mocha dist/**/*.spec.js --reporter spec --watch --require ignore-styles"
 	},
 	"engines": {
@@ -30,6 +30,7 @@
 	},
 	"homepage": "http://ponya.space",
 	"devDependencies": {
+		"@types/chai": "^4.2.14",
 		"@types/history": "^4.7.8",
 		"@types/lodash-es": "^4.17.0",
 		"@types/mocha": "^2.2.45",
@@ -37,9 +38,10 @@
 		"@types/react-dom": "^15.5.12",
 		"@types/react-transition-group": "^4.4.0",
 		"@types/react-vertical-timeline-component": "^2.6.0",
+		"@types/sinon-chai": "^3.2.5",
 		"babel-cli": "^6.26.0",
 		"babel-preset-es2016": "^6.24.1",
-		"chai": "^4.1.2",
+		"chai": "^4.2.0",
 		"clean-webpack-plugin": "^0.1.17",
 		"compression-webpack-plugin": "^1.1.11",
 		"copy-webpack-plugin": "^4.5.1",
@@ -61,6 +63,8 @@
 		"sinon-chai": "^3.5.0",
 		"style-loader": "^1.2.1",
 		"ts-loader": "^4.2.0",
+		"ts-mocha": "^8.0.0",
+		"ts-node": "^9.1.1",
 		"typed-css-modules": "^0.3.0",
 		"typescript": "^3.9.7",
 		"typings-for-css-modules-loader": "^1.7.0",

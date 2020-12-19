@@ -1,9 +1,6 @@
 import React from 'react'
 import 'jsdom-global/register'
 import { expect } from 'chai'
-// https://github.com/airbnb/enzyme/issues/1284
-// enzyme_adapter_react_16_1.default is not a constructor
-// TypeScript doesn't yet create synthetic default imports like Babel does
 import Enzyme, { mount } from 'enzyme'
 import { MenuItem } from './MenuItem'
 import Adapter from 'enzyme-adapter-react-16'
@@ -24,6 +21,7 @@ describe('Menu Item', () => {
 			.first()
 			.getDOMNode()
 			.getAttribute('src')
+
 		expect(imageSrc).to.equal(icon)
 	})
 })
