@@ -1,21 +1,21 @@
-const path = require('path')
-const express = require('express')
+import express, { NextFunction, Request, Response, Express } from 'express'
+import path from 'path'
 
-const app = express()
+const app: Express = express()
 const port = process.env.PORT || 3000
 
-app.listen(port, function () {
+app.listen(port, () => {
 	console.log('Started listening on port', port)
 })
 
-app.get('*.js', function (req, res, next) {
+app.get('*.js', (req: Request, res: Response, next: NextFunction) => {
 	req.url = req.url + '.gz'
 	res.set('Content-Encoding', 'gzip')
 	res.set('Content-Type', 'text/javascript')
 	next()
 })
 
-app.get('/', function (req, res) {
+app.get('/', (req: Request, res: Response) => {
 	res.sendFile(path.join(__dirname, '/index.html'))
 })
 
