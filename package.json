@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "Ponya.space - Eli's travel trough space",
 	"scripts": {
-		"start": "node server.js",
+		"start": "node server.ts",
 		"local": "webpack-dev-server --config ./webpack.dev.js",
 		"build": "webpack --config webpack.prod.js",
 		"build-local": "webpack --config webpack.dev.js",

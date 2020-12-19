@@ -1,7 +1,7 @@
 import React from 'react'
 import map from 'lodash-es/map'
 import { observer } from 'mobx-react'
-import { menuStore } from '../../../models/MenuStore'
+import { menuStore } from '../../models/MenuStore'
 import { MenuButton } from './MenuButton/MenuButton'
 import { MenuItem } from './MenuItem/MenuItem'
 import style from './Menu.scss'

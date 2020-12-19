@@ -2,7 +2,7 @@ import React from 'react'
 import style from './Resume.scss'
 import { Timeline } from '../Timeline/Timeline'
 import { ResumeItem } from './ResumeItem/ResumeItem'
-import { IResumeItemData, resumeItemsData } from '../../../models/ResumeItemData'
+import { IResumeItemData, resumeItemsData } from '../../models/ResumeItemData'
 
 export class Resume extends React.Component<{}, {}> {
 	resumeItemsToDomElements(resumeDataItems: IResumeItemData[]) {

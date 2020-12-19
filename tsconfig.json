@@ -10,7 +10,6 @@
     "moduleResolution": "node",
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
-    "noLib": false,
     "lib": [
       "dom",
       "es6"

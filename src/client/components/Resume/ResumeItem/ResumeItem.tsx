@@ -1,6 +1,6 @@
 import React from 'react'
 import style from './ResumeItem.scss'
-import { IResumeItemData } from '../../../../models/ResumeItemData'
+import { IResumeItemData } from '../../../models/ResumeItemData'
 
 export class ResumeItem extends React.Component<
 	{ item: IResumeItemData; right: boolean },
